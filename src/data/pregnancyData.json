@@ -1,0 +1,243 @@
+[
+    {
+      "week": 1,
+      "title": "Week 1",
+      "desc": "Although counted as the first week, conception hasn't occurred—your body is gearing up for ovulation.",
+      "source": "https://www.mayoclinic.org/healthy-lifestyle/pregnancy-week-by-week/in-depth/prenatal-care/art-20045302"
+    },
+    {
+      "week": 2,
+      "title": "Week 2",
+      "desc": "Ovulation typically occurs this week, making fertilization possible if sperm is present.",
+      "source": "https://www.mayoclinic.org/healthy-lifestyle/pregnancy-week-by-week/in-depth/prenatal-care/art-20045302"
+    },
+    {
+      "week": 3,
+      "title": "Week 3",
+      "desc": "Fertilization occurs, and the zygote begins rapid cell division as it travels toward uterine implantation.",
+      "source": "https://en.wikipedia.org/wiki/Timeline_of_human_prenatal_development"
+    },
+    {
+      "week": 4,
+      "title": "Week 4",
+      "desc": "The blastocyst implants into the uterine lining and the embryonic stage begins.",
+      "source": "https://en.wikipedia.org/wiki/Timeline_of_human_prenatal_development"
+    },
+    {
+      "week": 5,
+      "title": "Week 5",
+      "desc": "Pregnancy hormones rise, the neural tube forms, and the heart starts beating.",
+      "source": "https://en.wikipedia.org/wiki/Heart_development"
+    },
+    {
+      "week": 6,
+      "title": "Week 6",
+      "desc": "Limb buds appear, the neural tube closes, and facial features begin forming.",
+      "source": "https://en.wikipedia.org/wiki/Timeline_of_human_prenatal_development"
+    },
+    {
+      "week": 7,
+      "title": "Week 7",
+      "desc": "Major organs continue to develop; heart rate nears 150–170 bpm.",
+      "source": "https://en.wikipedia.org/wiki/Heart_development"
+    },
+    {
+      "week": 8,
+      "title": "Week 8",
+      "desc": "All major body systems are forming, fingers and toes begin to separate.",
+      "source": "https://en.wikipedia.org/wiki/Timeline_of_human_prenatal_development"
+    },
+    {
+      "week": 9,
+      "title": "Week 9",
+      "desc": "The embryo becomes a fetus; facial features, limbs, and organs continue maturing.",
+      "source": "https://en.wikipedia.org/wiki/Timeline_of_human_prenatal_development"
+    },
+    {
+      "week": 10,
+      "title": "Week 10",
+      "desc": "Toes, fingers, and eyelids are forming, and teeth buds start developing.",
+      "source": "https://en.wikipedia.org/wiki/Timeline_of_human_prenatal_development"
+    },
+    {
+      "week": 11,
+      "title": "Week 11",
+      "desc": "Fetal movements begin internally; bones are forming though still fragile.",
+      "source": "https://www.mayoclinic.org/healthy-lifestyle/pregnancy-week-by-week/in-depth/prenatal-care/art-20045302"
+    },
+    {
+      "week": 12,
+      "title": "Week 12",
+      "desc": "Organs are functioning; miscarriage risk drops significantly after this first trimester milestone.",
+      "source": "https://www.mayoclinic.org/healthy-lifestyle/pregnancy-week-by-week/in-depth/prenatal-care/art-20045302"
+    },
+    {
+      "week": 13,
+      "title": "Week 13",
+      "desc": "Fetus looks more human; skin becomes translucent, fetal movements increase.",
+      "source": "https://en.wikipedia.org/wiki/Timeline_of_human_prenatal_development"
+    },
+    {
+      "week": 14,
+      "title": "Week 14",
+      "desc": "Lanugo (fine hair) starts to form, and facial muscles allow expressions.",
+      "source": "https://en.wikipedia.org/wiki/Timeline_of_human_prenatal_development"
+    },
+    {
+      "week": 15,
+      "title": "Week 15",
+      "desc": "Sex may now be detectable by ultrasound; bones continue hardening.",
+      "source": "https://en.wikipedia.org/wiki/Timeline_of_human_prenatal_development"
+    },
+    {
+      "week": 16,
+      "title": "Week 16",
+      "desc": "Fetus begins sucking motions; most movements still not felt yet.",
+      "source": "https://en.wikipedia.org/wiki/Timeline_of_human_prenatal_development"
+    },
+    {
+      "week": 17,
+      "title": "Week 17",
+      "desc": "Fetal body fat increases and the circulatory system matures.",
+      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
+    },
+    {
+      "week": 18,
+      "title": "Week 18",
+      "desc": "Ears and eyes move into position; scans may reveal gender.",
+      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
+    },
+    {
+      "week": 19,
+      "title": "Week 19",
+      "desc": "Fetus practices breathing movements; fat stores continue to accumulate.",
+      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
+    },
+    {
+      "week": 20,
+      "title": "Week 20",
+      "desc": "Halfway there! You may feel your baby moving; anatomy scan usually done now.",
+      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
+    },
+    {
+      "week": 21,
+      "title": "Week 21",
+      "desc": "Baby is about 20cm long; lanugo covers the body; you may feel quickening.",
+      "source": "https://en.wikipedia.org/wiki/Timeline_of_human_prenatal_development"
+    },
+    {
+      "week": 22,
+      "title": "Week 22",
+      "desc": "Fingerprints form, and baby begins storing iron.",
+      "source": "https://en.wikipedia.org/wiki/Timeline_of_human_prenatal_development"
+    },
+    {
+      "week": 23,
+      "title": "Week 23",
+      "desc": "Baby’s movements strengthen; eyelids form and lungs develop.",
+      "source": "https://en.wikipedia.org/wiki/Timeline_of_human_prenatal_development"
+    },
+    {
+      "week": 24,
+      "title": "Week 24",
+      "desc": "Learning taste and voice recognition may begin; skin is wrinkled.",
+      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
+    },
+    {
+      "week": 25,
+      "title": "Week 25",
+      "desc": "Muscles strengthen; fat continues to accumulate beneath skin.",
+      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
+    },
+    {
+      "week": 26,
+      "title": "Week 26",
+      "desc": "Lungs practice breathing motions; baby responds to sound.",
+      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
+    },
+    {
+      "week": 27,
+      "title": "Week 27",
+      "desc": "Entering the third trimester—brain and lungs mature rapidly.",
+      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
+    },
+    {
+      "week": 28,
+      "title": "Week 28",
+      "desc": "Eyes open and close; rapid brain development continues.",
+      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
+    },
+    {
+      "week": 29,
+      "title": "Week 29",
+      "desc": "Muscle mass increases; bones are fully developed but soft.",
+      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
+    },
+    {
+      "week": 30,
+      "title": "Week 30",
+      "desc": "Baby gains around half a pound per week; immune system strengthens.",
+      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
+    },
+    {
+      "week": 31,
+      "title": "Week 31",
+      "desc": "Lanugo begins to shed; baby’s position may shift head-down.",
+      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
+    },
+    {
+      "week": 32,
+      "title": "Week 32",
+      "desc": "Bones harden; lanugo nearly gone; baby continues growing steadily.",
+      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
+    },
+    {
+      "week": 33,
+      "title": "Week 33",
+      "desc": "Baby's lungs mature quickly; fat increases and hearing sharpens.",
+      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
+    },
+    {
+      "week": 34,
+      "title": "Week 34",
+      "desc": "Baby drops lower; digestive system completes development.",
+      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
+    },
+    {
+      "week": 35,
+      "title": "Week 35",
+      "desc": "Baby gains strength and weight; bones are fully developed.",
+      "source": "https://en.wikipedia.org/wiki/Timeline_of_human_prenatal_development"
+    },
+    {
+      "week": 36,
+      "title": "Week 36",
+      "desc": "Lanugo is mostly gone; baby may engage deeper into birth canal.",
+      "source": "https://en.wikipedia.org/wiki/Timeline_of_human_prenatal_development"
+    },
+    {
+      "week": 37,
+      "title": "Week 37",
+      "desc": "Full term! Baby’s organs are ready; final growth and fat accumulation.",
+      "source": "https://en.wikipedia.org/wiki/Timeline_of_human_prenatal_development"
+    },
+    {
+      "week": 38,
+      "title": "Week 38",
+      "desc": "Baby practices breathing and movements inside; growth continues steadily.",
+      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
+    },
+    {
+      "week": 39,
+      "title": "Week 39",
+      "desc": "Baby is ready for birth; lanugo gone, lungs fully mature.",
+      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
+    },
+    {
+      "week": 40,
+      "title": "Week 40",
+      "desc": "Due date arrives! Baby may arrive any time now as most reach full term.",
+      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
+    }
+  ]
+  
