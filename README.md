@@ -1,4 +1,4 @@
-A React + TypeScript web app that helps expectant mothers track pregnancy progress week by week with information fetched from credible sources. The app provides interactive cards, week-specific details, and useful tips to support mothers during their journey.
+A React + TypeScript web app that helps expectant mothers track pregnancy progress week by week with information fetched from credible sources l. The app provides interactive cards, week-specific details, and useful tips to support mothers during their journey.
 
 ✨ Features
 

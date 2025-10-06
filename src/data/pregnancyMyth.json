@@ -1,0 +1,183 @@
+[
+    {
+      "id": 1,
+      "myth": "You should eat for two during pregnancy.",
+      "fact": "Pregnant women only need about 300 extra calories per day in the second and third trimesters, not double the food.",
+      "source": "https://www.mayoclinic.org/healthy-lifestyle/pregnancy-week-by-week/expert-answers/pregnancy-nutrition/faq-20058442"
+    },
+    {
+      "id": 2,
+      "myth": "Morning sickness only happens in the morning.",
+      "fact": "Nausea and vomiting can occur at any time of the day during pregnancy.",
+      "source": "https://www.acog.org/womens-health/faqs/morning-sickness-nausea-and-vomiting-of-pregnancy"
+    },
+    {
+      "id": 3,
+      "myth": "Pregnant women should avoid all exercise.",
+      "fact": "Moderate exercise is safe and beneficial during most pregnancies unless advised otherwise by a healthcare provider.",
+      "source": "https://www.cdc.gov/pregnancy/features/exercise-during-pregnancy.html"
+    },
+    {
+      "id": 4,
+      "myth": "Heartburn means the baby will have lots of hair.",
+      "fact": "Heartburn is caused by hormonal changes and stomach pressure, not directly linked to a baby's hair growth.",
+      "source": "https://www.mayoclinic.org/healthy-lifestyle/pregnancy-week-by-week/expert-answers/heartburn-during-pregnancy/faq-20058533"
+    },
+    {
+      "id": 5,
+      "myth": "You cannot dye your hair while pregnant.",
+      "fact": "Occasional hair dye use is generally considered safe, especially after the first trimester, but consult your doctor.",
+      "source": "https://www.nhs.uk/pregnancy/keeping-well/hair-dye/"
+    },
+    {
+      "id": 6,
+      "myth": "You should avoid all seafood during pregnancy.",
+      "fact": "Low-mercury fish like salmon and sardines are safe and provide important nutrients such as omega-3 fatty acids.",
+      "source": "https://www.fda.gov/food/consumers/advice-about-eating-fish"
+    },
+    {
+      "id": 7,
+      "myth": "Spicy foods can induce labor.",
+      "fact": "There’s no scientific evidence that spicy foods trigger labor.",
+      "source": "https://www.healthline.com/health/pregnancy/spicy-food-to-induce-labor"
+    },
+    {
+      "id": 8,
+      "myth": "Pregnant women should avoid flying.",
+      "fact": "Flying is generally safe until the last month of pregnancy, though long flights may increase risk of blood clots.",
+      "source": "https://www.acog.org/womens-health/faqs/travel-during-pregnancy"
+    },
+    {
+      "id": 9,
+      "myth": "Carrying high or low predicts the baby’s gender.",
+      "fact": "Belly shape depends on muscle tone, body type, and baby’s position—not gender.",
+      "source": "https://www.nhs.uk/common-health-questions/pregnancy/can-you-tell-a-babys-sex-from-the-shape-of-a-pregnant-belly/"
+    },
+    {
+      "id": 10,
+      "myth": "Pregnant women should avoid sleeping on their left side.",
+      "fact": "Sleeping on the left side is actually recommended as it improves blood flow to the baby.",
+      "source": "https://www.tommys.org/pregnancy-information/im-pregnant/sleep-and-pregnancy"
+    },
+    {
+      "id": 11,
+      "myth": "Cravings reveal what nutrients the baby needs.",
+      "fact": "Cravings are common but not reliable indicators of nutritional needs.",
+      "source": "https://www.marchofdimes.org/find-support/topics/pregnancy/food-cravings-during-pregnancy"
+    },
+    {
+      "id": 12,
+      "myth": "You cannot drink coffee while pregnant.",
+      "fact": "Moderate caffeine intake (under 200 mg per day) is considered safe during pregnancy.",
+      "source": "https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy"
+    },
+    {
+      "id": 13,
+      "myth": "All herbal teas are safe in pregnancy.",
+      "fact": "Some herbal teas may be unsafe; always check with a healthcare provider before consuming.",
+      "source": "https://www.nhs.uk/pregnancy/keeping-well/foods-to-avoid/"
+    },
+    {
+      "id": 14,
+      "myth": "You can’t have any sugar while pregnant.",
+      "fact": "Moderation is key; occasional treats are fine as part of a balanced diet.",
+      "source": "https://www.cdc.gov/pregnancy/nutrition/index.html"
+    },
+    {
+      "id": 15,
+      "myth": "Pregnant women must avoid baths.",
+      "fact": "Warm baths are safe; only hot tubs and saunas should be avoided due to overheating risks.",
+      "source": "https://www.mayoclinic.org/healthy-lifestyle/pregnancy-week-by-week/expert-answers/hot-tub-during-pregnancy/faq-20058578"
+    },
+    {
+      "id": 16,
+      "myth": "Stretch marks can always be prevented.",
+      "fact": "Genetics and skin type play a big role; creams may help but cannot guarantee prevention.",
+      "source": "https://www.nhs.uk/pregnancy/related-conditions/common-symptoms/stretch-marks/"
+    },
+    {
+      "id": 17,
+      "myth": "Pregnancy brain isn’t real.",
+      "fact": "Hormonal changes and sleep disturbances can affect memory and focus during pregnancy.",
+      "source": "https://www.health.harvard.edu/blog/pregnancy-brain-is-real-2017102412593"
+    },
+    {
+      "id": 18,
+      "myth": "Heart rate can predict a baby’s gender.",
+      "fact": "There’s no evidence linking fetal heart rate to gender.",
+      "source": "https://www.nhs.uk/pregnancy/keeping-well/babys-sex/"
+    },
+    {
+      "id": 19,
+      "myth": "Pregnant women cannot get vaccinated.",
+      "fact": "Some vaccines, like flu and Tdap, are recommended and protect both mother and baby.",
+      "source": "https://www.cdc.gov/vaccines-pregnancy/hcp/vaccination-guidelines/index.html"
+    },
+    {
+      "id": 20,
+      "myth": "Lifting your arms above your head can harm the baby.",
+      "fact": "There is no scientific basis for this belief; normal movement is safe.",
+      "source": "https://www.parents.com/pregnancy/myth-busting-pregnancy-myths/"
+    },
+    {
+      "id": 21,
+      "myth": "Pregnant women should avoid all dairy.",
+      "fact": "Pasteurized dairy products are safe and provide calcium and protein.",
+      "source": "https://www.nhs.uk/pregnancy/keeping-well/foods-to-avoid/"
+    },
+    {
+      "id": 22,
+      "myth": "Cesarean delivery is the easier option.",
+      "fact": "C-sections are major surgeries with risks; recovery can be longer compared to vaginal birth.",
+      "source": "https://www.acog.org/womens-health/faqs/cesarean-birth"
+    },
+    {
+      "id": 23,
+      "myth": "You cannot have sex during pregnancy.",
+      "fact": "Sex is safe for most pregnancies unless a doctor advises otherwise.",
+      "source": "https://www.mayoclinic.org/healthy-lifestyle/pregnancy-week-by-week/expert-answers/sex-during-pregnancy/faq-20058520"
+    },
+    {
+      "id": 24,
+      "myth": "Pregnant women should avoid vaccinations altogether.",
+      "fact": "Vaccines like flu and whooping cough are safe and recommended to protect mother and baby.",
+      "source": "https://www.who.int/news-room/questions-and-answers/item/vaccines-and-pregnant-women"
+    },
+    {
+      "id": 25,
+      "myth": "Labor always starts with water breaking.",
+      "fact": "Only about 15% of women experience water breaking as the first sign of labor.",
+      "source": "https://www.nhs.uk/pregnancy/labour-and-birth/signs-of-labour/"
+    },
+    {
+      "id": 26,
+      "myth": "Pregnant women should avoid pets.",
+      "fact": "Pets are safe; only cat litter poses risk due to toxoplasmosis.",
+      "source": "https://www.cdc.gov/parasites/toxoplasmosis/gen_info/pregnant.html"
+    },
+    {
+      "id": 27,
+      "myth": "Belly size shows baby’s health.",
+      "fact": "Belly size varies by body type and doesn’t reliably indicate baby’s size or health.",
+      "source": "https://www.parents.com/pregnancy/myth-busting-pregnancy-myths/"
+    },
+    {
+      "id": 28,
+      "myth": "You must avoid cheese during pregnancy.",
+      "fact": "Only unpasteurized soft cheeses should be avoided; pasteurized cheeses are safe.",
+      "source": "https://www.nhs.uk/pregnancy/keeping-well/foods-to-avoid/"
+    },
+    {
+      "id": 29,
+      "myth": "Pregnant women should avoid all medications.",
+      "fact": "Some medications are safe; always consult a healthcare provider before taking any.",
+      "source": "https://www.fda.gov/consumers/consumer-updates/medicines-and-pregnancy"
+    },
+    {
+      "id": 30,
+      "myth": "Eating peanuts during pregnancy causes allergies.",
+      "fact": "Eating peanuts in pregnancy does not increase allergy risk and may even reduce it.",
+      "source": "https://www.nhs.uk/pregnancy/keeping-well/foods-to-avoid/"
+    }
+  ]
+  
