@@ -56,7 +56,7 @@ const About = () => {
 
 
     {/* expanded about */}
-    <div className={`fixed inset-0 w-full overflow-y-auto transition-all duration-600 ease-in-out ${
+    <div className={`fixed inset-0 w-full overflow-y-auto transition-all duration-600 ease-in-out z-[9999] ${
       open 
         ? 'opacity-100 visible bg-black/50 backdrop-blur-sm' 
         : 'opacity-0 invisible bg-black/0'

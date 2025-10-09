@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import logo from "../assets/images/preeggslogo.png"
 
 const Logo = () => {
   return (
@@ -9,8 +10,9 @@ const Logo = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
-                        <em className="bg-gradient-to-r from-pink-500 to-rose-500 bg-clip-text text-transparent">
+                    <h1 className="text-3xl md:text-4xl font-bold text-gray-800 flex items-center hover:cursor-pointer"  onClick={() => window.location.href = "/"}>
+                        <img src={logo} alt="logo" className="h-9 mr-2"  />
+                        <em className="bg-gradient-to-r from-pink-400 to-rose-400 bg-clip-text text-transparent">
                             Preggs
                         </em>
                         <span className="text-gray-700">Care</span>

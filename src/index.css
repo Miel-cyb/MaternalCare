@@ -2,8 +2,10 @@
 @import "tailwindcss/utilities";
 @import "tailwindcss";
 
-body {
+* {
   font-family: '"Playwrite HU"', cursive;
+  margin:0;
+  padding:0;
 }
 
 button{
@@ -12,11 +14,26 @@ button{
 }
 
 @keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
-  100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
-.animate-float {
-  animation: float 4s ease-in-out infinite;
+@keyframes slow-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-slow-rotate {
+  animation: slow-rotate 60s linear infinite;
 }

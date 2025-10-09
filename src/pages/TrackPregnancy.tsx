@@ -11,6 +11,7 @@ import { BiLoader } from 'react-icons/bi';
 import { LuRefreshCcw } from 'react-icons/lu';
 import pregnancyData from '../data/pregnancyData.json'
 import { useState } from 'react';
+import HealthTracker from '../components/HealthTracker';
 
 
 
@@ -222,10 +223,9 @@ const TrackPregnancy = () => {
                             className="w-full"
                             >
                             <Card
-                                {...item}
+                                title={''} {...item}
                                 className="backdrop-blur-sm rounded-2xl shadow-lg p-4 w-full text-sm border border-white/20"
-                                style={{ backgroundColor: item.color + '90' }}
-                            />
+                                style={{ backgroundColor: item.color + '90' }}                            />
                             </motion.div>
                         ))}
                         </motion.div>
@@ -365,6 +365,7 @@ const TrackPregnancy = () => {
 
                 </motion.div>
             </section>
+            <HealthTracker />
         </div>
     </>
     );

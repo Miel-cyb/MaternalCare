@@ -1,21 +1,22 @@
+import Hero from "../components/Hero";
+import Vitals from "../components/Vitals";
+import Myths from "../components/Myths";
+import About from "../components/About";
+import Navbar from "../components/Navbar";
+import Meals from '../components/pregnancyNutrition'
 
-import Navbar from '../components/Navbar'
-import Hero from '../components/Hero'
-import About from "../components/About"
-import Circles from "../components/Circles"
-import Myths from "../components/Myths"
 
 const Home = () => {
   return (
-    <>
-    
-    <Navbar/>
-    <Hero/>
-    <Circles/>
-    <About/>
-    <Myths/>
-    </>
-  )
-}
+    <div>
+      <Navbar />
+      <Hero />
+      <Vitals />
+      <About />
+      <Meals />
+      <Myths />
+    </div>
+  );
+};
 
-export default Home
+export default Home;
