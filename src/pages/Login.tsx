@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
-import { auth, googleProvider } from '../firebase';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../firebase';
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -20,15 +20,7 @@ const Login = () => {
         }
     };
 
-    const handleGoogleSignIn = async () => {
-        try {
-            await signInWithPopup(auth, googleProvider);
-            navigate('/home');
-        } catch (error: any) {
-            setError(error.message);
-        }
-    };
-
+    
     return (
         <div className="flex flex-col items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-md w-full space-y-8">

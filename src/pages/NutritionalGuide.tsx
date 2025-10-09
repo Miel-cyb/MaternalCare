@@ -2,7 +2,7 @@ import  { useEffect, type JSX } from "react";
 import { motion } from "framer-motion";
 import nutritionImage from '../assets/images/nutrition.jpg'
 import Faq from "../components/Faq";
-
+import NutrientsRing from '../components/NutrientsRing'
 
 
 
@@ -105,67 +105,7 @@ export default function NutritionGuide(): JSX.Element {
           Key nutrients support baby's growth and the mother's health. Below are the essentials, why they matter, and foods that contain them.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {/* Folate */}
-          <article className="bg-white rounded-2xl p-5 shadow-sm border border-slate-100">
-            <h3 className="font-bold text-rose-700 mb-2">Folate (Folic Acid)</h3>
-            <p className="text-sm text-slate-700 mb-2">Helps prevent neural tube defects; crucial before conception and in early pregnancy.</p>
-            <p className="text-xs text-slate-600 mb-3">Foods: leafy greens, legumes, fortified grains</p>
-            <a href={SOURCES.nichd} className="text-indigo-600 text-sm underline" target="_blank" rel="noopener noreferrer">
-              {getHost(SOURCES.nichd)}
-            </a>
-          </article>
-
-          {/* Iron */}
-          <article className="bg-white rounded-2xl p-5 shadow-sm border border-slate-100">
-            <h3 className="font-bold text-rose-700 mb-2">Iron</h3>
-            <p className="text-sm text-slate-700 mb-2">Supports increased maternal blood volume and prevents anemia.</p>
-            <p className="text-xs text-slate-600 mb-3">Foods: red meat, beans, spinach</p>
-            <a href={SOURCES.who} className="text-indigo-600 text-sm underline" target="_blank" rel="noopener noreferrer">
-              {getHost(SOURCES.who)}
-            </a>
-          </article>
-
-          {/* Calcium */}
-          <article className="bg-white rounded-2xl p-5 shadow-sm border border-slate-100">
-            <h3 className="font-bold text-rose-700 mb-2">Calcium</h3>
-            <p className="text-sm text-slate-700 mb-2">Important for baby’s bones and teeth and mother’s bone health.</p>
-            <p className="text-xs text-slate-600 mb-3">Foods: milk, yogurt, leafy greens</p>
-            <a href={SOURCES.nhs} className="text-indigo-600 text-sm underline" target="_blank" rel="noopener noreferrer">
-              {getHost(SOURCES.nhs)}
-            </a>
-          </article>
-
-          {/* Omega-3 */}
-          <article className="bg-white rounded-2xl p-5 shadow-sm border border-slate-100">
-            <h3 className="font-bold text-rose-700 mb-2">Omega-3 (DHA/EPA)</h3>
-            <p className="text-sm text-slate-700 mb-2">Supports fetal brain and eye development; supports maternal mood.</p>
-            <p className="text-xs text-slate-600 mb-3">Foods: salmon, flaxseed, walnuts</p>
-            <a href={SOURCES.who} className="text-indigo-600 text-sm underline" target="_blank" rel="noopener noreferrer">
-              {getHost(SOURCES.who)}
-            </a>
-          </article>
-
-          {/* Protein */}
-          <article className="bg-white rounded-2xl p-5 shadow-sm border border-slate-100">
-            <h3 className="font-bold text-rose-700 mb-2">Protein</h3>
-            <p className="text-sm text-slate-700 mb-2">Needed for fetal growth and maternal tissue repair.</p>
-            <p className="text-xs text-slate-600 mb-3">Foods: eggs, chicken, legumes</p>
-            <a href={SOURCES.mayo} className="text-indigo-600 text-sm underline" target="_blank" rel="noopener noreferrer">
-              {getHost(SOURCES.mayo)}
-            </a>
-          </article>
-
-          {/* Iodine */}
-          <article className="bg-white rounded-2xl p-5 shadow-sm border border-slate-100">
-            <h3 className="font-bold text-rose-700 mb-2">Iodine</h3>
-            <p className="text-sm text-slate-700 mb-2">Supports thyroid function for neurological development.</p>
-            <p className="text-xs text-slate-600 mb-3">Foods: iodized salt, seafood, dairy</p>
-            <a href={SOURCES.who} className="text-indigo-600 text-sm underline" target="_blank" rel="noopener noreferrer">
-              {getHost(SOURCES.who)}
-            </a>
-          </article>
-        </div>
+        <NutrientsRing/>
       </section>
 
       {/* TRIMESTER GUIDANCE */}

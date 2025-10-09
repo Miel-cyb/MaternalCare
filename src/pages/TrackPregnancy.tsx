@@ -2,13 +2,12 @@ import pregnantWoman from '../assets/pregnant woman.png'
 import fetus from '../assets/images/fetus.png'
 import food from '../assets/images/dish7.png'
 import Card from '../components/Card'
-import { FaHeart,FaCalendarCheck, FaLightbulb } from "react-icons/fa";
+import { FaHeart, FaLightbulb } from "react-icons/fa";
 import { GiSunflower } from "react-icons/gi";
-import { MdFavorite, MdChecklist } from "react-icons/md";
+import { MdFavorite } from "react-icons/md";
 import { motion } from "framer-motion";
 import Logo from '../components/Logo';
-import { BiLoader } from 'react-icons/bi';
-import { LuRefreshCcw } from 'react-icons/lu';
+
 import pregnancyData from '../data/pregnancyData.json'
 import { useState } from 'react';
 import HealthTracker from '../components/HealthTracker';
@@ -196,14 +195,13 @@ const TrackPregnancy = () => {
                                         }}
                                     >
                                         <Card
-                                            {...item}
-                                            className={`backdrop-blur-sm rounded-2xl shadow-xl p-6 w-80 text-sm border border-white/20
+                                        title={''} {...item}
+                                        className={`backdrop-blur-sm rounded-2xl shadow-xl p-6 w-80 text-sm border border-white/20
                                             hover:shadow-2xl transition-all duration-300 transform`}
-                                            style={{
-                                                backgroundColor: item.color + '90',
-                                                transform: `rotate(${positions[index].rotate})`
-                                            }}
-                                        />
+                                        style={{
+                                            backgroundColor: item.color + '90',
+                                            transform: `rotate(${positions[index].rotate})`
+                                        }}                                        />
                                     </motion.div>
                                 );
                             })}
