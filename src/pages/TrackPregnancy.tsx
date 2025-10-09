@@ -5,8 +5,9 @@ import Card from '../components/Card'
 import { FaHeart, FaLightbulb } from "react-icons/fa";
 import { GiSunflower } from "react-icons/gi";
 import { MdFavorite } from "react-icons/md";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import Logo from '../components/Logo';
+import { LuRefreshCcw } from "react-icons/lu";
 
 import pregnancyData from '../data/pregnancyData.json'
 import { useState } from 'react';
@@ -35,7 +36,7 @@ const TrackPregnancy = () => {
         },
     ];
 
-    const containerVariants = {
+    const containerVariants: Variants = {
         hidden: { opacity: 0 },
         visible: {
             opacity: 1,
@@ -46,7 +47,7 @@ const TrackPregnancy = () => {
         }
     };
 
-    const cardVariants = {
+    const cardVariants: Variants = {
         hidden: { opacity: 0, y: 50, scale: 0.9 },
         visible: { 
             opacity: 1, 
@@ -231,6 +232,8 @@ const TrackPregnancy = () => {
                          {/* Special last card with semi-circle wrap */}
                          <motion.div
                             variants={cardVariants}
+                            initial="hidden"
+                            whileInView="visible"
                             className="absolute left-1/2 -translate-x-1/2 top-1/2  z-40 w-64 lg:hidden w-full  "
                         >
                             <div
