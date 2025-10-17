@@ -11,7 +11,7 @@ const navLinks = [
   { name: 'Pregnancy Tracker', path: '/pregnancy-tracker' },
   { name: 'Nutritional Guide', path: '/nutritional-guide' },
   { name: 'Myths & Facts', path: '#myths' },
-  { name: 'Resources', path: '#resources' },
+  { name: 'Resources', path: '/resources' },
 ];
 
 export default function Navbar() {

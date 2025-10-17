@@ -1,22 +1,23 @@
-import  { useEffect, type JSX } from "react";
+import { useEffect, useState, useRef, type FocusEvent } from "react";
 import { motion } from "framer-motion";
-import nutritionImage from '../assets/images/nutrition.jpg'
+import jsPDF from "jspdf";
+import html2canvas from "html2canvas";
+import nutritionImage from '../assets/images/nutrition.jpg';
 import Faq from "../components/Faq";
-import NutrientsRing from '../components/NutrientsRing'
-
-
-
-
-const heroImg = nutritionImage
+import NutrientsRing from '../components/NutrientsRing';
+import dish2 from '../assets/images/dish2.png';
+import dish3 from '../assets/images/dish3.png'
+import Logo from '../components/Logo'
+const heroImg = nutritionImage;
 
 // Meal gallery sample images (Unsplash)
 const mealImages = [
-  "https://images.unsplash.com/photo-1543353071-087092ec393f?auto=format&fit=crop&w=1000&q=80",
+  dish2,
   "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1000&q=80",
   "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=1000&q=80",
   "https://images.unsplash.com/photo-1506806732259-39c2d0268443?auto=format&fit=crop&w=1000&q=80",
   "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1000&q=80",
-  "https://images.unsplash.com/photo-1540136277-1f6fe7a5b59d?auto=format&fit=crop&w=1000&q=80",
+  dish3
 ];
 
 // Verified sources (display hostnames automatically)
@@ -38,13 +39,95 @@ const getHost = (url: string) => {
   }
 };
 
-export default function NutritionGuide(): JSX.Element {
+interface Meal {
+  d: string;
+  b: string;
+  l: string;
+  dn: string;
+}
+
+const EditableMealPlan = () => {
+  const [mealPlan, setMealPlan] = useState<Meal[]>([
+    { d: "Mon", b: "Oatmeal + banana", l: "Grilled chicken salad", dn: "Steamed fish + veg" },
+    { d: "Tue", b: "Yogurt + berries", l: "Brown rice + beans", dn: "Light stew + plantain" },
+    { d: "Wed", b: "Eggs + avocado", l: "Quinoa + veg", dn: "Vegetable soup" },
+    { d: "Thu", b: "Smoothie", l: "Turkey wrap", dn: "Stir-fry + rice" },
+    { d: "Fri", b: "Whole grain cereal", l: "Tilapia + salad", dn: "Pasta + spinach" },
+    { d: "Sat", b: "Pancakes + fruit", l: "Lentils + rice", dn: "Light soup" },
+    { d: "Sun", b: "Beans porridge", l: "Chicken + greens", dn: "Rice + vegetable stew" },
+  ]);
+
+  const tableRef = useRef(null);
+
+  const handleCellChange = (e: FocusEvent<HTMLTableCellElement>, rowIndex: number, key: keyof Meal) => {
+    const newMealPlan = [...mealPlan];
+    newMealPlan[rowIndex][key] = e.currentTarget.innerText;
+    setMealPlan(newMealPlan);
+  };
+
+  const addRow = () => {
+    setMealPlan([...mealPlan, { d: "", b: "", l: "", dn: "" }]);
+  };
+
+  const downloadPdf = () => {
+    if (tableRef.current) {
+      html2canvas(tableRef.current).then((canvas) => {
+        const imgData = canvas.toDataURL('image/png');
+        const pdf = new jsPDF();
+        const imgProps = pdf.getImageProperties(imgData);
+        const pdfWidth = pdf.internal.pageSize.getWidth();
+        const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
+        pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
+        pdf.save("meal-plan.pdf");
+      });
+    }
+  };
+
+  return (
+    <div className="max-w-6xl mx-auto px-6 md:px-12">
+      <h2 className="text-2xl font-semibold text-rose-800 mb-4">Sample Weekly Meal Plan</h2>
+      <div className="overflow-auto rounded-lg shadow" ref={tableRef}>
+        <table className="w-full bg-white table-auto">
+          <thead className="bg-rose-100">
+            <tr>
+              <th className="p-3 text-left">Day</th>
+              <th className="p-3 text-left">Breakfast</th>
+              <th className="p-3 text-left">Lunch</th>
+              <th className="p-3 text-left">Dinner</th>
+            </tr>
+          </thead>
+          <tbody>
+            {mealPlan.map((row, i) => (
+              <tr key={i} className="border-t last:border-b">
+                <td className="p-3 font-semibold" contentEditable onBlur={(e) => handleCellChange(e, i, 'd')}>{row.d}</td>
+                <td className="p-3" contentEditable onBlur={(e) => handleCellChange(e, i, 'b')}>{row.b}</td>
+                <td className="p-3" contentEditable onBlur={(e) => handleCellChange(e, i, 'l')}>{row.l}</td>
+                <td className="p-3" contentEditable onBlur={(e) => handleCellChange(e, i, 'dn')}>{row.dn}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div className="mt-4 flex justify-between">
+        <button onClick={addRow} className="inline-block px-4 py-2 bg-rose-600 text-white rounded-lg hover:bg-rose-700 transition">
+          Add Row
+        </button>
+        <button onClick={downloadPdf} className="inline-block px-4 py-2 bg-rose-600 text-white rounded-lg hover:bg-rose-700 transition">
+          Download PDF Plan
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default function NutritionGuide() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="bg-white text-slate-800">
+      <Logo/>
       {/* HERO */}
       <section className="relative bg-gradient-to-br from-rose-50 via-white to-rose-50">
         {/* overlay curve */}
@@ -99,7 +182,7 @@ export default function NutritionGuide(): JSX.Element {
       </section>
 
       {/* ESSENTIAL NUTRIENTS */}
-      <section className="max-w-6xl mx-auto px-6 md:px-12 py-12">
+      <section className="max-w-6xl mx-auto px-6 md:px-12 overflow-hidden ">
         <h2 className="text-2xl md:text-3xl font-semibold text-rose-800 mb-6">Essential Nutrients</h2>
         <p className="text-slate-700 mb-6 max-w-3xl">
           Key nutrients support baby's growth and the mother's health. Below are the essentials, why they matter, and foods that contain them.
@@ -171,44 +254,7 @@ export default function NutritionGuide(): JSX.Element {
 
       {/* SAMPLE MEAL PLAN (table) */}
       <section className="py-12 bg-rose-50">
-        <div className="max-w-6xl mx-auto px-6 md:px-12">
-          <h2 className="text-2xl font-semibold text-rose-800 mb-4">Sample Weekly Meal Plan</h2>
-
-          <div className="overflow-auto rounded-lg shadow">
-            <table className="w-full bg-white table-auto">
-              <thead className="bg-rose-100">
-                <tr>
-                  <th className="p-3 text-left">Day</th>
-                  <th className="p-3 text-left">Breakfast</th>
-                  <th className="p-3 text-left">Lunch</th>
-                  <th className="p-3 text-left">Dinner</th>
-                </tr>
-              </thead>
-              <tbody>
-                {[
-                  { d: "Mon", b: "Oatmeal + banana", l: "Grilled chicken salad", dn: "Steamed fish + veg" },
-                  { d: "Tue", b: "Yogurt + berries", l: "Brown rice + beans", dn: "Light stew + plantain" },
-                  { d: "Wed", b: "Eggs + avocado", l: "Quinoa + veg", dn: "Vegetable soup" },
-                  { d: "Thu", b: "Smoothie", l: "Turkey wrap", dn: "Stir-fry + rice" },
-                  { d: "Fri", b: "Whole grain cereal", l: "Tilapia + salad", dn: "Pasta + spinach" },
-                  { d: "Sat", b: "Pancakes + fruit", l: "Lentils + rice", dn: "Light soup" },
-                  { d: "Sun", b: "Beans porridge", l: "Chicken + greens", dn: "Rice + vegetable stew" },
-                ].map((row, i) => (
-                  <tr key={i} className="border-t last:border-b">
-                    <td className="p-3 font-semibold">{row.d}</td>
-                    <td className="p-3">{row.b}</td>
-                    <td className="p-3">{row.l}</td>
-                    <td className="p-3">{row.dn}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-
-          <div className="mt-4 text-right">
-            <a href="#" className="inline-block px-4 py-2 bg-rose-600 text-white rounded-lg hover:bg-rose-700 transition">Download PDF Plan</a>
-          </div>
-        </div>
+        <EditableMealPlan />
       </section>
 
       {/* POSTPARTUM NUTRITION & RECOVERY */}

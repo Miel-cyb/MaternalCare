@@ -11,12 +11,12 @@ interface Nutrient {
 }
 
 const nutrients: Nutrient[] = [
-  { id: "folate", label: "Folate", videoUrl: "https://www.youtube.com/embed/A0p8aRjUu-8", color: "#FAD0C4" },
-  { id: "iron", label: "Iron", videoUrl: "https://www.youtube.com/embed/NXQbQhZ0Q5U", color: "#F8B195" },
-  { id: "calcium", label: "Calcium", videoUrl: "https://www.youtube.com/embed/pdNn5jktWlI", color: "#F67280" },
-  { id: "omega3", label: "Omega-3", videoUrl: "https://www.youtube.com/embed/S7fP3FHZpP4", color: "#C06C84" },
-  { id: "protein", label: "Protein", videoUrl: "https://www.youtube.com/embed/JdghT4O0h7c", color: "#6C5B7B" },
-  { id: "iodine", label: "Iodine", videoUrl: "https://www.youtube.com/embed/R5R8nP_3qgE", color: "#355C7D" },
+  { id: "folate", label: "Folate", videoUrl: "https://www.youtube.com/embed/3gt2GlVUWYQ", color: "#FAD0C4" },
+  { id: "iron", label: "Iron", videoUrl: "https://www.youtube.com/embed/kCB0hHBwpeA", color: "#F8B195" },
+  { id: "calcium", label: "Calcium", videoUrl: "https://www.youtube.com/embed/1_9J1yemesQ", color: "#F67280" },
+  { id: "omega3", label: "Omega-3", videoUrl: "https://www.youtube.com/embed/Jrg1IfsED8w", color: "#C06C84" },
+  { id: "protein", label: "Protein", videoUrl: "https://www.youtube.com/embed/-DZoiFs9rd0", color: "#6C5B7B" },
+  { id: "iodine", label: "Iodine", videoUrl: "https://www.youtube.com/embed/NfIikMZQD5w", color: "#355C7D" },
 ];
 
 export default function NutrientsRing() {
@@ -34,18 +34,25 @@ export default function NutrientsRing() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center mt-16 mb-24 gap-10 md:gap-20 relative">
+    <div className="flex flex-col sm:flex-row justify-center items-end  mb-24 gap-10 md:gap-20 relative ">
       {/* Doctor Image - Only on larger screens */}
-      <div className="hidden md:flex justify-center items-center">
+      <div className="hidden sm:flex justify-center items-center">
         <img
           src={Doctor}
           alt="Doctor pointing at nutrients"
-          className="w-72 h-auto object-contain drop-shadow-lg"
+          className="w-[30rem] h-full object-contain drop-shadow-lg -mb-24"
         />
       </div>
 
       {/* Nutrient Ring */}
       <div className="relative w-[340px] h-[340px] md:w-[420px] md:h-[420px] flex justify-center items-center">
+        <motion.p
+          className="absolute text-center text-gray-600 font-medium text-sm w-3/5"
+          animate={{ opacity: [0.5, 1, 0.5] }}
+          transition={{ duration: 2, repeat: Infinity }}
+        >
+          Click on any circle to watch an expert's teachings
+        </motion.p>
         {nutrients.map((nutrient, idx) => {
           const angle = (idx / nutrients.length) * 2 * Math.PI;
           const radius = 130; // smaller for mobile fit
@@ -65,7 +72,6 @@ export default function NutrientsRing() {
                 backgroundColor: nutrient.color,
                 zIndex: 5,
               }}
-              whileHover={{ scale: 1.12 }}
               onClick={() => openModal(nutrient)}
             >
               <span className="text-white font-semibold text-sm px-2">{nutrient.label}</span>
@@ -98,8 +104,9 @@ export default function NutrientsRing() {
                 width="100%"
                 height="360"
                 className="rounded-lg"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allow-presentation"
                 allowFullScreen
+                frameBorder="0"
               ></iframe>
             </div>
           )}

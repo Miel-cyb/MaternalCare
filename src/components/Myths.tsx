@@ -1,9 +1,7 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import { Navigation } from "swiper/modules";
-
-import mythList from "../data/pregnancyMyth.json"
+import { useState } from "react";
+import { motion } from "framer-motion";
+import mythList from "../data/pregnancyMyth.json";
+import { LuLightbulb, LuBadgeCheck } from "react-icons/lu";
 
 type Myth = {
   id: number;
@@ -12,94 +10,65 @@ type Myth = {
   source: string;
 };
 
-const getSourceName = (url: string) => {
-  try {
-    return new URL(url).hostname.replace("www.", "");
-  } catch {
-    return url;
-  }
-};
-
-const MythsSlider = () => {
-  // Group myths into chunks of 5
-  const chunkedMyths: Myth[][] = [];
-  for (let i = 0; i < mythList.length; i += 5) {
-    chunkedMyths.push(mythList.slice(i, i + 5));
-  }
+const MythCard = ({ myth }: { myth: Myth }) => {
+  const [isFlipped, setIsFlipped] = useState(false);
 
   return (
-    <section className="max-w-6xl mx-auto mt-20 px-4 py-12 bg-gray-50 rounded-3xl shadow-sm">
-      <h2 className="text-3xl font-extrabold text-center mb-14 text-rose-500 tracking-wide">
-        Pregnancy Myths vs Facts
-      </h2>
-
-      <Swiper
-        modules={[Navigation]}
-        navigation
-        loop={true}
-        spaceBetween={50}
-        slidesPerView={1} // each slide shows 5 myths
+    <motion.div
+      className="relative w-full h-64 cursor-pointer"
+      onHoverStart={() => setIsFlipped(true)}
+      onHoverEnd={() => setIsFlipped(false)}
+      style={{ perspective: "1000px" }}
+    >
+      {/* Front Side (Myth) */}
+      <motion.div
+        className="absolute w-full h-full bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center justify-center text-center border-2 border-rose-200"
+        animate={{ rotateY: isFlipped ? 180 : 0 }}
+        transition={{ duration: 0.5 }}
+        style={{ backfaceVisibility: "hidden" }}
       >
-        {chunkedMyths.map((chunk, chunkIndex) => (
-          <SwiperSlide key={chunkIndex}>
-            {/* Container: waterfall on mobile, star on desktop */}
-            <div className="flex flex-col space-y-6 lg:grid lg:grid-cols-12 lg:gap-8 lg:space-y-0">
-              {chunk.map((myth: Myth, index: number) => {
-                // Star layout positions (desktop only)
-                let starClasses = "";
-                if (index === 0)
-                  starClasses =
-                    "lg:col-span-4 lg:col-start-5 lg:row-start-1"; // top center
-                if (index === 1)
-                  starClasses =
-                    "lg:col-span-3 lg:col-start-2 lg:row-start-2"; // left middle
-                if (index === 2)
-                  starClasses =
-                    "lg:col-span-3 lg:col-start-8 lg:row-start-2"; // right middle
-                if (index === 3)
-                  starClasses =
-                    "lg:col-span-3 lg:col-start-1 lg:row-start-3"; // bottom left
-                if (index === 4)
-                  starClasses =
-                    "lg:col-span-3 lg:col-start-9 lg:row-start-3"; // bottom right
+        <LuLightbulb className="text-rose-500 text-4xl mb-3" />
+        <h3 className="font-bold text-lg text-rose-800">Myth</h3>
+        <p className="mt-2 text-gray-600">{myth.myth}</p>
+      </motion.div>
 
-                // Waterfall layout (mobile only)
-                const waterfallClasses = `${
-                  index % 2 === 0 ? "self-start" : "self-end"
-                } ${index % 3 === 0 ? "max-w-sm" : index % 3 === 1 ? "max-w-md" : "max-w-lg"}`;
+      {/* Back Side (Fact) */}
+      <motion.div
+        className="absolute w-full h-full bg-emerald-50 rounded-2xl shadow-lg p-6 flex flex-col items-center justify-center text-center border-2 border-emerald-200"
+        initial={{ rotateY: -180 }}
+        animate={{ rotateY: isFlipped ? 0 : -180 }}
+        transition={{ duration: 0.5 }}
+        style={{ backfaceVisibility: "hidden" }}
+      >
+        <LuBadgeCheck className="text-emerald-500 text-4xl mb-3" />
+        <h3 className="font-bold text-lg text-emerald-800">Fact</h3>
+        <p className="mt-2 text-gray-700">{myth.fact}</p>
+        <a
+          href={myth.source}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-xs mt-4 text-indigo-600 font-medium underline"
+        >
+          Source
+        </a>
+      </motion.div>
+    </motion.div>
+  );
+};
 
-                return (
-                  <div
-                    key={myth.id}
-                    className={`bg-white rounded-2xl shadow-md p-6 flex flex-col justify-between border border-gray-100
-                    ${waterfallClasses} ${starClasses}`}
-                  >
-                    <h3 className="font-semibold text-lg text-rose-600 text-center line-clamp-2">
-                      {myth.myth}
-                    </h3>
-                    <p className="text-emerald-700 text-sm mt-3 text-center leading-relaxed line-clamp-3">
-                      ✅ {myth.fact}
-                    </p>
-                    <p className="text-xs mt-4 text-center text-gray-500">
-                      Source:{" "}
-                      <a
-                        href={myth.source}
-                        className="text-indigo-600 font-medium underline underline-offset-2"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {getSourceName(myth.source)}
-                      </a>
-                    </p>
-                  </div>
-                );
-              })}
-            </div>
-          </SwiperSlide>
+const Myths = () => {
+  return (
+    <section className="max-w-6xl mx-auto mt-20 px-4 py-12" id="myths">
+      <h2 className="text-4xl font-extrabold text-center mb-12 text-gray-800">
+        Debunking Pregnancy Myths
+      </h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {mythList.map((myth) => (
+          <MythCard key={myth.id} myth={myth} />
         ))}
-      </Swiper>
+      </div>
     </section>
   );
 };
 
-export default MythsSlider;
+export default Myths;

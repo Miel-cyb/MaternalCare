@@ -3,7 +3,8 @@ import Vitals from "../components/Vitals";
 import Myths from "../components/Myths";
 import About from "../components/About";
 import Navbar from "../components/Navbar";
-import Meals from '../components/pregnancyNutrition'
+import Meals from '../components/pregnancyNutrition';
+import ScrollToTop from '../components/ScrollToTop';
 
 
 const Home = () => {
@@ -14,7 +15,10 @@ const Home = () => {
       <Vitals />
       <About />
       <Meals />
-      <Myths />
+      <div id="myths">
+        <Myths />
+      </div>
+      <ScrollToTop />
     </div>
   );
 };

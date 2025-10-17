@@ -8,7 +8,7 @@ import { MdFavorite } from "react-icons/md";
 import { motion, type Variants } from "framer-motion";
 import Logo from '../components/Logo';
 import { LuRefreshCcw } from "react-icons/lu";
-
+import WeeklyInfo from "../components/WeeklyInfo";
 import pregnancyData from '../data/pregnancyData.json'
 import { useState } from 'react';
 import HealthTracker from '../components/HealthTracker';
@@ -324,46 +324,7 @@ const TrackPregnancy = () => {
                         Track your progress, get tips, and celebrate each milestone 
                         on your beautiful journey to motherhood.
                     </p>
-                    
-                <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-4 md:p-6 max-w-md mx-auto">
-                    <div className="space-y-4">
-                        <p className="font-semibold text-gray-800 text-lg">Enter your pregnancy week</p>
-                        
-                        <div className="flex flex-col sm:flex-row gap-3 items-start sm:items-center">
-                            <div className="relative">
-                                <input 
-                                required
-                                onChange={(e) => setWeeks(Number(e.target.value))}
-                                type="number" 
-                                max={40} 
-                                min={1} 
-                                placeholder="1 wk(s)" 
-                                className="w-20 h-11 px-3 text-center rounded-lg border-2 border-gray-300 focus:border-pink-400  focus:outline-none focus:ring-2 focus:ring-pink-100 transition-colors"
-                                />
-
-                            </div>
-                        
-                            <button className="flex items-center justify-center gap-2 bg-pink-500 hover:bg-pink-600 active:bg-pink-700 text-white font-medium px-4 py-2.5 rounded-lg transition-colors duration-200 w-full sm:w-auto min-w-[120px] shadow-sm" onClick={fetchWeeklyData}>
-                                <LuRefreshCcw className="w-4 h-4" />
-                                Get info
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-
-                {weeklyData ? (
-                <div className="mt-3 p-3 bg-pink-50 rounded-lg">
-                    <h3 className="font-bold">{weeklyData.title}</h3>
-                    <p className="text-gray-700">{weeklyData.desc}</p>
-                    <small className="text-gray-500">
-                        Source: <a href={weeklyData.source} target="_blank" className="text-pink-500 underline">{weeklyData.source}</a>
-                    </small>
-                </div>
-            ) : (
-                weeks && <p className="text-gray-500 mt-3">No data found for week {weeks}</p>
-            )}
-
+                    <WeeklyInfo/>
                 </motion.div>
             </section>
             <HealthTracker />

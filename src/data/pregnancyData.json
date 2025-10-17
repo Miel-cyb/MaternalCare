@@ -1,243 +1,322 @@
 [
-    {
-      "week": 1,
-      "title": "Week 1",
-      "desc": "Although counted as the first week, conception hasn't occurred—your body is gearing up for ovulation.",
-      "source": "https://www.mayoclinic.org/healthy-lifestyle/pregnancy-week-by-week/in-depth/prenatal-care/art-20045302"
-    },
-    {
-      "week": 2,
-      "title": "Week 2",
-      "desc": "Ovulation typically occurs this week, making fertilization possible if sperm is present.",
-      "source": "https://www.mayoclinic.org/healthy-lifestyle/pregnancy-week-by-week/in-depth/prenatal-care/art-20045302"
-    },
-    {
-      "week": 3,
-      "title": "Week 3",
-      "desc": "Fertilization occurs, and the zygote begins rapid cell division as it travels toward uterine implantation.",
-      "source": "https://en.wikipedia.org/wiki/Timeline_of_human_prenatal_development"
-    },
-    {
-      "week": 4,
-      "title": "Week 4",
-      "desc": "The blastocyst implants into the uterine lining and the embryonic stage begins.",
-      "source": "https://en.wikipedia.org/wiki/Timeline_of_human_prenatal_development"
-    },
-    {
-      "week": 5,
-      "title": "Week 5",
-      "desc": "Pregnancy hormones rise, the neural tube forms, and the heart starts beating.",
-      "source": "https://en.wikipedia.org/wiki/Heart_development"
-    },
-    {
-      "week": 6,
-      "title": "Week 6",
-      "desc": "Limb buds appear, the neural tube closes, and facial features begin forming.",
-      "source": "https://en.wikipedia.org/wiki/Timeline_of_human_prenatal_development"
-    },
-    {
-      "week": 7,
-      "title": "Week 7",
-      "desc": "Major organs continue to develop; heart rate nears 150–170 bpm.",
-      "source": "https://en.wikipedia.org/wiki/Heart_development"
-    },
-    {
-      "week": 8,
-      "title": "Week 8",
-      "desc": "All major body systems are forming, fingers and toes begin to separate.",
-      "source": "https://en.wikipedia.org/wiki/Timeline_of_human_prenatal_development"
-    },
-    {
-      "week": 9,
-      "title": "Week 9",
-      "desc": "The embryo becomes a fetus; facial features, limbs, and organs continue maturing.",
-      "source": "https://en.wikipedia.org/wiki/Timeline_of_human_prenatal_development"
-    },
-    {
-      "week": 10,
-      "title": "Week 10",
-      "desc": "Toes, fingers, and eyelids are forming, and teeth buds start developing.",
-      "source": "https://en.wikipedia.org/wiki/Timeline_of_human_prenatal_development"
-    },
-    {
-      "week": 11,
-      "title": "Week 11",
-      "desc": "Fetal movements begin internally; bones are forming though still fragile.",
-      "source": "https://www.mayoclinic.org/healthy-lifestyle/pregnancy-week-by-week/in-depth/prenatal-care/art-20045302"
-    },
-    {
-      "week": 12,
-      "title": "Week 12",
-      "desc": "Organs are functioning; miscarriage risk drops significantly after this first trimester milestone.",
-      "source": "https://www.mayoclinic.org/healthy-lifestyle/pregnancy-week-by-week/in-depth/prenatal-care/art-20045302"
-    },
-    {
-      "week": 13,
-      "title": "Week 13",
-      "desc": "Fetus looks more human; skin becomes translucent, fetal movements increase.",
-      "source": "https://en.wikipedia.org/wiki/Timeline_of_human_prenatal_development"
-    },
-    {
-      "week": 14,
-      "title": "Week 14",
-      "desc": "Lanugo (fine hair) starts to form, and facial muscles allow expressions.",
-      "source": "https://en.wikipedia.org/wiki/Timeline_of_human_prenatal_development"
-    },
-    {
-      "week": 15,
-      "title": "Week 15",
-      "desc": "Sex may now be detectable by ultrasound; bones continue hardening.",
-      "source": "https://en.wikipedia.org/wiki/Timeline_of_human_prenatal_development"
-    },
-    {
-      "week": 16,
-      "title": "Week 16",
-      "desc": "Fetus begins sucking motions; most movements still not felt yet.",
-      "source": "https://en.wikipedia.org/wiki/Timeline_of_human_prenatal_development"
-    },
-    {
-      "week": 17,
-      "title": "Week 17",
-      "desc": "Fetal body fat increases and the circulatory system matures.",
-      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
-    },
-    {
-      "week": 18,
-      "title": "Week 18",
-      "desc": "Ears and eyes move into position; scans may reveal gender.",
-      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
-    },
-    {
-      "week": 19,
-      "title": "Week 19",
-      "desc": "Fetus practices breathing movements; fat stores continue to accumulate.",
-      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
-    },
-    {
-      "week": 20,
-      "title": "Week 20",
-      "desc": "Halfway there! You may feel your baby moving; anatomy scan usually done now.",
-      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
-    },
-    {
-      "week": 21,
-      "title": "Week 21",
-      "desc": "Baby is about 20cm long; lanugo covers the body; you may feel quickening.",
-      "source": "https://en.wikipedia.org/wiki/Timeline_of_human_prenatal_development"
-    },
-    {
-      "week": 22,
-      "title": "Week 22",
-      "desc": "Fingerprints form, and baby begins storing iron.",
-      "source": "https://en.wikipedia.org/wiki/Timeline_of_human_prenatal_development"
-    },
-    {
-      "week": 23,
-      "title": "Week 23",
-      "desc": "Baby’s movements strengthen; eyelids form and lungs develop.",
-      "source": "https://en.wikipedia.org/wiki/Timeline_of_human_prenatal_development"
-    },
-    {
-      "week": 24,
-      "title": "Week 24",
-      "desc": "Learning taste and voice recognition may begin; skin is wrinkled.",
-      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
-    },
-    {
-      "week": 25,
-      "title": "Week 25",
-      "desc": "Muscles strengthen; fat continues to accumulate beneath skin.",
-      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
-    },
-    {
-      "week": 26,
-      "title": "Week 26",
-      "desc": "Lungs practice breathing motions; baby responds to sound.",
-      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
-    },
-    {
-      "week": 27,
-      "title": "Week 27",
-      "desc": "Entering the third trimester—brain and lungs mature rapidly.",
-      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
-    },
-    {
-      "week": 28,
-      "title": "Week 28",
-      "desc": "Eyes open and close; rapid brain development continues.",
-      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
-    },
-    {
-      "week": 29,
-      "title": "Week 29",
-      "desc": "Muscle mass increases; bones are fully developed but soft.",
-      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
-    },
-    {
-      "week": 30,
-      "title": "Week 30",
-      "desc": "Baby gains around half a pound per week; immune system strengthens.",
-      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
-    },
-    {
-      "week": 31,
-      "title": "Week 31",
-      "desc": "Lanugo begins to shed; baby’s position may shift head-down.",
-      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
-    },
-    {
-      "week": 32,
-      "title": "Week 32",
-      "desc": "Bones harden; lanugo nearly gone; baby continues growing steadily.",
-      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
-    },
-    {
-      "week": 33,
-      "title": "Week 33",
-      "desc": "Baby's lungs mature quickly; fat increases and hearing sharpens.",
-      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
-    },
-    {
-      "week": 34,
-      "title": "Week 34",
-      "desc": "Baby drops lower; digestive system completes development.",
-      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
-    },
-    {
-      "week": 35,
-      "title": "Week 35",
-      "desc": "Baby gains strength and weight; bones are fully developed.",
-      "source": "https://en.wikipedia.org/wiki/Timeline_of_human_prenatal_development"
-    },
-    {
-      "week": 36,
-      "title": "Week 36",
-      "desc": "Lanugo is mostly gone; baby may engage deeper into birth canal.",
-      "source": "https://en.wikipedia.org/wiki/Timeline_of_human_prenatal_development"
-    },
-    {
-      "week": 37,
-      "title": "Week 37",
-      "desc": "Full term! Baby’s organs are ready; final growth and fat accumulation.",
-      "source": "https://en.wikipedia.org/wiki/Timeline_of_human_prenatal_development"
-    },
-    {
-      "week": 38,
-      "title": "Week 38",
-      "desc": "Baby practices breathing and movements inside; growth continues steadily.",
-      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
-    },
-    {
-      "week": 39,
-      "title": "Week 39",
-      "desc": "Baby is ready for birth; lanugo gone, lungs fully mature.",
-      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
-    },
-    {
-      "week": 40,
-      "title": "Week 40",
-      "desc": "Due date arrives! Baby may arrive any time now as most reach full term.",
-      "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
-    }
-  ]
-  
+  {
+    "week": 1,
+    "title": "Week 1",
+    "desc": "Pregnancy is counted from the first day of your last period; biologically you aren’t yet pregnant but your body is preparing for ovulation.",
+    "babyDevelopment": "No embryo yet — the body is preparing for ovulation and potential fertilization.",
+    "nutrition": "Start folic acid (400–800 mcg daily) if planning pregnancy; eat leafy greens, beans, and whole grains.",
+    "source": "https://ghanahealthservice.org/nutrition/pregnancy-care/"
+  },
+  {
+    "week": 2,
+    "title": "Week 2",
+    "desc": "Ovulation typically happens this week; if sperm meets egg, fertilization may follow.",
+    "babyDevelopment": "Still preconception; the egg is released and awaits fertilization.",
+    "nutrition": "Continue prenatal vitamins, hydrate, include protein-rich local foods like beans and eggs.",
+    "source": "https://www.babyandme.com.gh/en/pregnancy-weekly-calendar"
+  },
+  {
+    "week": 3,
+    "title": "Week 3",
+    "desc": "Fertilization typically occurs and the zygote begins dividing as it travels to the uterus.",
+    "babyDevelopment": "A fertilized egg (zygote) becomes a blastocyst as cells divide and prepare for implantation.",
+    "nutrition": "Avoid alcohol and tobacco; emphasize folate, B vitamins and lean protein.",
+    "source": "https://my.clevelandclinic.org/health/articles/7247-fetal-development-stages-of-growth"
+  },
+  {
+    "week": 4,
+    "title": "Week 4",
+    "desc": "Implantation occurs and early pregnancy hormones (hCG) rise; a pregnancy test may become positive.",
+    "babyDevelopment": "The blastocyst attaches to the uterine lining and the placenta begins to form.",
+    "nutrition": "Keep taking folic acid and iron; eat vitamin C–rich fruits to improve iron absorption (oranges, pawpaw).",
+    "source": "https://www.mayoclinic.org/healthy-lifestyle/pregnancy-week-by-week"
+  },
+  {
+    "week": 5,
+    "title": "Week 5",
+    "desc": "The embryo is forming rapidly; early symptoms like fatigue and nausea may appear.",
+    "babyDevelopment": "Neural tube begins to form; primitive heart begins to beat.",
+    "nutrition": "Continue folate-rich foods (kontomire/leafy greens), lean protein, and small frequent meals if nauseous.",
+    "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
+  },
+  {
+    "week": 6,
+    "title": "Week 6",
+    "desc": "Embryo growth accelerates — facial features begin to form and limb buds appear.",
+    "babyDevelopment": "Arm and leg buds form; rudimentary eyes and ears begin to develop; heartbeat detectable in some scans.",
+    "nutrition": "Ginger for nausea (tea), whole grains for energy, and iron-rich snacks like groundnuts and beans.",
+    "source": "https://www.mayoclinic.org/healthy-lifestyle/pregnancy-week-by-week"
+  },
+  {
+    "week": 7,
+    "title": "Week 7",
+    "desc": "Organ systems continue to form; early pregnancy symptoms may persist.",
+    "babyDevelopment": "Major organs are forming; brain development continues rapidly.",
+    "nutrition": "Ensure adequate fluids and iron; include vitamin-B rich foods and protein (fish low in mercury, eggs).",
+    "source": "https://my.clevelandclinic.org/health/articles/7247-fetal-development-stages-of-growth"
+  },
+  {
+    "week": 8,
+    "title": "Week 8",
+    "desc": "Embryo is more recognizable and moving but movements aren’t felt yet.",
+    "babyDevelopment": "Fingers and toes begin separating; facial features refine further.",
+    "nutrition": "Continue prenatal vitamins and calcium-rich foods (milk, small fish with bones), and eat fiber to ease constipation.",
+    "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
+  },
+  {
+    "week": 9,
+    "title": "Week 9",
+    "desc": "The embryo is now called a fetus and continues developing organs and structures.",
+    "babyDevelopment": "Muscles and nerves begin working together; facial features and limbs become more defined.",
+    "nutrition": "Prioritize iron and vitamin C to aid absorption — e.g., kontomire stew and oranges; stay hydrated.",
+    "source": "https://www.mayoclinic.org/healthy-lifestyle/pregnancy-week-by-week"
+  },
+  {
+    "week": 10,
+    "title": "Week 10",
+    "desc": "The first major phase of organ formation is nearing completion.",
+    "babyDevelopment": "Toes, fingers, and eyelids develop; tooth buds appear; fetus about the size of a prune.",
+    "nutrition": "Balanced meals with protein (beans, fish), calcium (milk, small fish), and folate continue to be important.",
+    "source": "https://my.clevelandclinic.org/health/articles/7247-fetal-development-stages-of-growth"
+  },
+  {
+    "week": 11,
+    "title": "Week 11",
+    "desc": "Risk of miscarriage falls for many; fetus continues growing quickly.",
+    "babyDevelopment": "Bones begin to form and internal organs keep maturing; small movements begin.",
+    "nutrition": "Keep iron and folate levels steady; include vitamin D through safe sun and diet if advised.",
+    "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
+  },
+  {
+    "week": 12,
+    "title": "Week 12",
+    "desc": "End of the first trimester for many — many symptoms ease and energy returns.",
+    "babyDevelopment": "Fetus can open and close fingers; major organs are present and working.",
+    "nutrition": "Increase fiber and water to combat constipation; continue prenatal vitamins and balanced meals.",
+    "source": "https://www.mayoclinic.org/healthy-lifestyle/pregnancy-week-by-week"
+  },
+  {
+    "week": 13,
+    "title": "Week 13",
+    "desc": "Second trimester begins; nausea often improves and energy increases.",
+    "babyDevelopment": "Fetus grows rapidly; neck lengthens and facial features refine.",
+    "nutrition": "Add healthy fats and proteins — avocado, groundnuts (in moderation), and lean meats.",
+    "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
+  },
+  {
+    "week": 14,
+    "title": "Week 14",
+    "desc": "Fetal movements increase; mother may begin to feel subtle shifts in energy and appetite.",
+    "babyDevelopment": "Fine hair (lanugo) forms; facial muscles allow small expressions.",
+    "nutrition": "Continue balanced meals; include fruit for vitamins and fiber (bananas, oranges).",
+    "source": "https://my.clevelandclinic.org/health/articles/7247-fetal-development-stages-of-growth"
+  },
+  {
+    "week": 15,
+    "title": "Week 15",
+    "desc": "Bones continue to harden slightly and the fetus increases activity.",
+    "babyDevelopment": "Skeleton begins to ossify (start of hardening); reflexes develop.",
+    "nutrition": "Include vitamin D and calcium sources: milk, yogurt, small fish; sunlight exposure if safe.",
+    "source": "https://www.mayoclinic.org/healthy-lifestyle/pregnancy-week-by-week"
+  },
+  {
+    "week": 16,
+    "title": "Week 16",
+    "desc": "Movements increase; some women begin to notice quickening later in pregnancy.",
+    "babyDevelopment": "Sucking motions start; limbs lengthen and strengthen.",
+    "nutrition": "Iron-rich snacks (beans, roasted groundnuts) and complex carbs (yam, plantain) to keep energy stable.",
+    "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
+  },
+  {
+    "week": 17,
+    "title": "Week 17",
+    "desc": "Fetal fat begins to form and the placenta continues maturing to support growth.",
+    "babyDevelopment": "Fat accumulates beneath the skin and the circulatory system matures.",
+    "nutrition": "Increase protein and healthy fats for baby’s development — fish low in mercury, eggs, legumes.",
+    "source": "https://my.clevelandclinic.org/health/articles/7247-fetal-development-stages-of-growth"
+  },
+  {
+    "week": 18,
+    "title": "Week 18",
+    "desc": "Hearing improves and the baby responds to external sounds.",
+    "babyDevelopment": "Ears move to final positions and the baby may start to hear muffled sounds from outside.",
+    "nutrition": "Continue iron and vitamin C (fruits) and include omega-3 sources for brain support.",
+    "source": "https://www.who.int/health-topics/maternal-health"
+  },
+  {
+    "week": 19,
+    "title": "Week 19",
+    "desc": "Growth continues, movements become stronger and anatomy scans are common around this time.",
+    "babyDevelopment": "Organs and tissues become more refined; baby practices breathing movements.",
+    "nutrition": "Ensure adequate iron and calcium; consider snacks like boiled eggs and fruit to support energy.",
+    "source": "https://www.mayoclinic.org/tests-procedures/ultrasound/about/pac-20395177"
+  },
+  {
+    "week": 20,
+    "title": "Week 20",
+    "desc": "Halfway point — baby’s movements are more noticeable; many have an anatomy scan this week.",
+    "babyDevelopment": "Coordinated movement increases; organs continue maturing.",
+    "nutrition": "Prioritize iron-rich meals and hydration; include vegetables and whole grains for steady energy.",
+    "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
+  },
+  {
+    "week": 21,
+    "title": "Week 21",
+    "desc": "Fetal activity rises and mothers often feel regular kicks and patterns.",
+    "babyDevelopment": "Lanugo covers the baby and swallowing practice helps develop digestion.",
+    "nutrition": "Maintain protein, fiber and hydration; include local staples like kontomire, beans, and plantain.",
+    "source": "https://ghanahealthservice.org/nutrition/pregnancy-care/"
+  },
+  {
+    "week": 22,
+    "title": "Week 22",
+    "desc": "Sensory development continues; baby becomes more responsive to sounds and light.",
+    "babyDevelopment": "Fingerprints and more distinct facial features develop; responds to voices.",
+    "nutrition": "Vitamin C–rich fruits support iron uptake; include citrus, pawpaw and leafy greens.",
+    "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
+  },
+  {
+    "week": 23,
+    "title": "Week 23",
+    "desc": "The baby’s lungs and other organs continue maturing; movements feel stronger.",
+    "babyDevelopment": "Lung tissues develop branching airways and fetal kicking increases.",
+    "nutrition": "Balanced meals and snacks to meet growing calorie needs; whole grains and legumes are helpful.",
+    "source": "https://my.clevelandclinic.org/health/articles/7247-fetal-development-stages-of-growth"
+  },
+  {
+    "week": 24,
+    "title": "Week 24",
+    "desc": "Viability improves — babies born now have better chances with neonatal care.",
+    "babyDevelopment": "Lungs produce surfactant and reflexes become stronger.",
+    "nutrition": "Ensure iron, calcium and protein; monitor fetal movements and rest as needed.",
+    "source": "https://www.who.int/health-topics/maternal-health"
+  },
+  {
+    "week": 25,
+    "title": "Week 25",
+    "desc": "Fat accumulation increases and movements become more forceful.",
+    "babyDevelopment": "Fat stores under the skin increase and muscle tone improves.",
+    "nutrition": "Include healthy fats, protein and fruits; try avocado, fish low in mercury, and legumes.",
+    "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
+  },
+  {
+    "week": 26,
+    "title": "Week 26",
+    "desc": "Lungs and nervous system mature quickly; baby’s eyes begin to open more.",
+    "babyDevelopment": "Lungs practice breathing and the baby may open and close eyes.",
+    "nutrition": "Keep calcium and vitamin D up; milk and fortified cereals help. Stay hydrated.",
+    "source": "https://my.clevelandclinic.org/health/articles/7247-fetal-development-stages-of-growth"
+  },
+  {
+    "week": 27,
+    "title": "Week 27",
+    "desc": "Third trimester begins; focus shifts to monitoring growth and comfort.",
+    "babyDevelopment": "Baby sleeps and wakes in cycles, gains weight rapidly and responds to stimuli.",
+    "nutrition": "Increase iron-rich meals and fiber to avoid constipation; include fruits and vegetables.",
+    "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
+  },
+  {
+    "week": 28,
+    "title": "Week 28",
+    "desc": "Rapid brain development occurs and the baby gains more fat for temperature regulation.",
+    "babyDevelopment": "Neural development accelerates and body fat rises.",
+    "nutrition": "Continue calcium and protein intake; small frequent meals ease heartburn.",
+    "source": "https://www.mayoclinic.org/healthy-lifestyle/pregnancy-week-by-week"
+  },
+  {
+    "week": 29,
+    "title": "Week 29",
+    "desc": "Baby’s movements are strong and frequent; mothers should monitor patterns.",
+    "babyDevelopment": "Muscle mass and coordination increase; bones continue maturing.",
+    "nutrition": "Hydration and electrolyte balance are important; include soups and stews with vegetables.",
+    "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
+  },
+  {
+    "week": 30,
+    "title": "Week 30",
+    "desc": "Weight gain for mother and baby accelerates; prepare for birth discussions with your provider.",
+    "babyDevelopment": "Fat increases and immune system strengthens; eyes react to light.",
+    "nutrition": "Prioritize iron-rich lunches, calcium and protein; plan balanced meals with healthcare guidance.",
+    "source": "https://my.clevelandclinic.org/health/articles/7247-fetal-development-stages-of-growth"
+  },
+  {
+    "week": 31,
+    "title": "Week 31",
+    "desc": "Baby continues gaining weight and the position may shift toward head-down.",
+    "babyDevelopment": "Nervous system matures and lungs develop more alveoli.",
+    "nutrition": "Steady calories and protein are important; snack on fruits, nuts, and milk products.",
+    "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
+  },
+  {
+    "week": 32,
+    "title": "Week 32",
+    "desc": "Fetal lung and brain development continues; discuss birth preferences with your provider.",
+    "babyDevelopment": "Baby practices breathing and swallowing; bones harden but remain flexible.",
+    "nutrition": "Monitor iron and calcium intake; maintain fiber to avoid constipation.",
+    "source": "https://www.mayoclinic.org/healthy-lifestyle/pregnancy-week-by-week"
+  },
+  {
+    "week": 33,
+    "title": "Week 33",
+    "desc": "Lungs mature rapidly and fat stores increase for temperature regulation after birth.",
+    "babyDevelopment": "Hearing and other sensory systems sharpen; increased fat changes body shape.",
+    "nutrition": "Eat nutrient-dense foods and stay hydrated; light activity as approved by your provider.",
+    "source": "https://my.clevelandclinic.org/health/articles/7247-fetal-development-stages-of-growth"
+  },
+  {
+    "week": 34,
+    "title": "Week 34",
+    "desc": "Baby readies for birth; many babies begin moving into a head-down position.",
+    "babyDevelopment": "Digestive system matures and lungs continue to develop surfactant.",
+    "nutrition": "Small frequent meals and fiber-rich foods to manage discomforts; prioritize calcium and iron.",
+    "source": "https://www.who.int/health-topics/maternal-health"
+  },
+  {
+    "week": 35,
+    "title": "Week 35",
+    "desc": "Close to full term — finalize birth plans and pack hospital essentials.",
+    "babyDevelopment": "Rapid weight gain continues; organs are nearly mature.",
+    "nutrition": "Hydrate well and keep nutrient-dense snacks ready; focus on iron and protein.",
+    "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
+  },
+  {
+    "week": 36,
+    "title": "Week 36",
+    "desc": "Baby often drops lower into the pelvis; final organ maturation continues.",
+    "babyDevelopment": "Lungs and brain finalize growth and baby settles toward the birth canal in many pregnancies.",
+    "nutrition": "Keep balanced meals, frequent hydration and light, easily digestible foods before labor.",
+    "source": "https://ghanahealthservice.org/nutrition/pregnancy-care/"
+  },
+  {
+    "week": 37,
+    "title": "Week 37",
+    "desc": "Full term begins; baby is generally ready for life outside the womb.",
+    "babyDevelopment": "Organs are mature; baby continues to gain weight and regulate body systems.",
+    "nutrition": "Rest, hydrate, and keep easy-to-eat nutrient-dense foods available for labor and recovery.",
+    "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
+  },
+  {
+    "week": 38,
+    "title": "Week 38",
+    "desc": "Final preparations continue; baby practices breathing and sucking.",
+    "babyDevelopment": "Vernix and lanugo reduce; lungs, brain and digestive system prepare for birth.",
+    "nutrition": "Small meals to avoid heartburn; maintain hydration and light proteins for energy.",
+    "source": "https://my.clevelandclinic.org/health/articles/7247-fetal-development-stages-of-growth"
+  },
+  {
+    "week": 39,
+    "title": "Week 39",
+    "desc": "Baby gains last layer of fat and is positioned for birth; labor could begin any time.",
+    "babyDevelopment": "Lungs fully mature and baby’s body prepares for independent breathing and temperature regulation.",
+    "nutrition": "Eat light balanced meals, hydrate, and follow your birth plan and provider’s guidance.",
+    "source": "https://www.verywellfamily.com/pregnancy-your-week-by-week-guide-4159265"
+  },
+  {
+    "week": 40,
+    "title": "Week 40",
+    "desc": "Your due date — many babies arrive around now, while others may come slightly earlier or later.",
+    "babyDevelopment": "Baby is full term; organs are ready for life outside the womb.",
+    "nutrition": "Stay hydrated, keep easy-to-digest meals available, and follow the healthcare team's instructions if labor begins.",
+    "source": "https://www.mayoclinic.org/healthy-lifestyle/pregnancy-week-by-week"
+  }
+]

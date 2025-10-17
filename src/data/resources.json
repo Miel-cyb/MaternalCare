@@ -1,0 +1,251 @@
+
+[
+  {
+    "id": "p1",
+    "category": "Pregnancy",
+    "title": "Understanding the First Trimester",
+    "summary": "Learn about the crucial developments in the first 13 weeks of pregnancy, from hormonal changes to baby's first heartbeat.",
+    "source": "https://www.verywellfamily.com/the-first-trimester-of-pregnancy-4782332",
+    "image": "/src/assets/images/happypregnantwoman.png"
+  },
+  {
+    "id": "p2",
+    "category": "Pregnancy",
+    "title": "Nutrition Guide for a Healthy Pregnancy",
+    "summary": "Essential nutrients, foods to eat, and foods to avoid to ensure both you and your baby are well-nourished.",
+    "source": "https://www.betterhealth.vic.gov.au/health/healthyliving/pregnancy-and-diet",
+    "image": "/src/assets/images/nutrition.jpg"
+  },
+  {
+    "id": "d1",
+    "category": "Baby Development",
+    "title": "Your Baby's Growth in the Second Trimester",
+    "summary": "Discover the rapid growth and new abilities your baby develops from week 14 to 27.",
+    "source": "https://my.clevelandclinic.org/health/articles/7247-fetal-development-stages-of-growth",
+    "image": "/src/assets/images/fetus.png"
+  },
+  {
+    "id": "r1",
+    "category": "Postpartum Recovery",
+    "title": "The First 6 Weeks After Delivery",
+    "summary": "A guide to healing, emotional changes, and self-care during the postpartum period.",
+    "source": "https://www.mayoclinic.org/healthy-lifestyle/labor-and-delivery/in-depth/postpartum-care/art-20047233",
+    "image": "/src/assets/images/healing.png"
+  },
+  {
+    "id": "p3",
+    "category": "Pregnancy",
+    "title": "Exercising Safely During Pregnancy",
+    "summary": "Stay active and healthy with these recommended exercises for expectant mothers.",
+    "source": "https://www.acog.org/womens-health/faqs/exercise-during-pregnancy",
+    "image": "/src/assets/images/pregnancyexercise.png"
+  },
+  {
+    "id": "d2",
+    "category": "Baby Development",
+    "title": "Sensory Development in the Womb",
+    "summary": "How your baby's senses—hearing, sight, touch—develop before birth.",
+    "source": "https://www.whattoexpect.com/pregnancy/fetal-development/fetal-senses/",
+    "image": "/src/assets/images/baby.png"
+  },
+  {
+    "id": "r2",
+    "category": "Postpartum Recovery",
+    "title": "Understanding Postpartum Depression",
+    "summary": "Learn to recognize the signs of postpartum depression and where to find support.",
+    "source": "https://www.who.int/teams/maternal-newborn-child-adolescent-health-and-ageing/maternal-health/postnatal-care",
+    "image": "/src/assets/images/checkup.png"
+  },
+  {
+    "id": "p4",
+    "category": "Pregnancy",
+    "title": "Common Discomforts and Remedies",
+    "summary": "From morning sickness to back pain, here’s how to manage common pregnancy complaints.",
+    "source": "https://www.hopkinsmedicine.org/health/conditions-and-diseases/staying-healthy-during-pregnancy/common-pregnancy-complaints-and-remedies",
+    "image": "/src/assets/images/pregnant woman.png"
+  },
+  {
+    "id": "d3",
+    "category": "Baby Development",
+    "title": "Monthly Baby Milestones: A Guide for New Parents",
+    "summary": "From the first smile to the first step, this guide covers the key developmental milestones for your baby's first year. Learn what to expect each month and how to support your little one's growth.",
+    "source": "https://www.unicef.org/parenting/child-development/your-babys-developmental-milestones",
+    "image": "/src/assets/images/babymilestones.png"
+  },
+  {
+    "id": "r3",
+    "category": "Postpartum Recovery",
+    "title": "Nutrition for Breastfeeding Mothers",
+    "summary": "Eating a healthy diet is especially important when you're breastfeeding. This guide covers the key nutrients you need, foods to include in your diet, and tips for maintaining your energy levels.",
+    "source": "https://www.cdc.gov/breastfeeding/breastfeeding-special-circumstances/maternal-or-infant-illnesses/diet.html",
+    "image": "/src/assets/images/breastfeeding.png"
+  },
+  {
+    "id": "p5",
+    "category": "Pregnancy",
+    "title": "Essential Tests During Pregnancy",
+    "summary": "From ultrasounds to glucose screening, this article outlines the most important prenatal tests. Understand why they are recommended and what you can learn from them to ensure a healthy pregnancy.",
+    "source": "https://www.testing.com/tests/prenatal-screening/",
+    "image": "/src/assets/images/tests.png"
+  },
+  {
+    "id": "p6",
+    "category": "Pregnancy",
+    "title": "Managing Stress and Anxiety During Pregnancy",
+    "summary": "Pregnancy can be a stressful time. This article provides tips for managing stress and anxiety, including relaxation techniques, exercise, and seeking support.",
+    "source": "https://www.womenshealth.gov/mental-health/mental-health-conditions/anxiety-disorders",
+    "image": "/src/assets/images/happypregnantwoman.png"
+  },
+  {
+    "id": "p7",
+    "category": "Pregnancy",
+    "title": "Sleeping Positions During Pregnancy",
+    "summary": "As your body changes, finding a comfortable sleeping position can be challenging. This guide explains the best sleeping positions for each trimester and which positions to avoid.",
+    "source": "https://www.sleepfoundation.org/pregnancy/best-sleep-positions-during-pregnancy",
+    "image": "/src/assets/images/sleepingpositions.png"
+  },
+  {
+    "id": "p8",
+    "category": "Pregnancy",
+    "title": "What to Pack in Your Hospital Bag",
+    "summary": "A checklist of essential items to pack in your hospital bag for labor, delivery, and postpartum. Be prepared for your baby's arrival with this comprehensive guide.",
+    "source": "https://www.babycenter.com/pregnancy/your-body/hospital-bag-what-to-pack_7210",
+    "image": "/src/assets/images/hospitalbag.png"
+  },
+  {
+    "id": "p9",
+    "category": "Pregnancy",
+    "title": "Signs of Labor: How to Know When It's Time",
+    "summary": "Learn to recognize the early signs of labor, such as contractions, water breaking, and bloody show. This article helps you understand when to call your doctor or midwife.",
+    "source": "https://www.mayoclinic.org/healthy-lifestyle/labor-and-delivery/in-depth/signs-of-labor/art-20046184",
+    "image": "/src/assets/images/Doctor.png"
+  },
+  {
+    "id": "p10",
+    "category": "Pregnancy",
+    "title": "Creating a Birth Plan",
+    "summary": "A birth plan is a way to communicate your wishes to your healthcare team during labor and delivery. This guide explains what to include in your birth plan and how to discuss it with your provider.",
+    "source": "https://www.thebump.com/a/what-is-birth-plan",
+    "image": "/src/assets/images/happypregnantwoman.png"
+  },
+  {
+    "id": "d4",
+    "category": "Baby Development",
+    "title": "Tummy Time for Your Baby",
+    "summary": "Tummy time is essential for your baby's development. This article explains the benefits of tummy time, how to do it safely, and how to make it fun for your baby.",
+    "source": "https://www.nationwidechildrens.org/family-resources-education/700childrens/2022/05/tummy-time",
+    "image": "/src/assets/images/baby.png"
+  },
+  {
+    "id": "d5",
+    "category": "Baby Development",
+    "title": "Introducing Solid Foods to Your Baby",
+    "summary": "A guide to introducing solid foods to your baby, including when to start, what foods to offer, and how to spot allergic reactions.",
+    "source": "https://www.cdc.gov/nutrition/infantandtoddlernutrition/foods-and-drinks/when-to-introduce-solid-foods.html",
+    "image": "/src/assets/images/mealBowl.png"
+  },
+  {
+    "id": "d6",
+    "category": "Baby Development",
+    "title": "Your Baby's Hearing and Vision Development",
+    "summary": "Learn about the milestones in your baby's hearing and vision development, and how to stimulate their senses.",
+    "source": "https://www.helpguide.org/articles/infant-baby-development/infant-and-baby-development.htm",
+    "image": "/src/assets/images/baby.png"
+  },
+  {
+    "id": "d7",
+    "category": "Baby Development",
+    "title": "The Importance of Reading to Your Baby",
+    "summary": "Reading to your baby from an early age has many benefits. This article explains why reading is important and provides tips for choosing books and reading to your baby.",
+    "source": "https://www.healthychildren.org/English/ages-stages/baby/literacy/Pages/The-Importance-of-Reading-to-Your-Baby.aspx",
+    "image": "/src/assets/images/baby.png"
+  },
+  {
+    "id": "d8",
+    "category": "Baby Development",
+    "title": "Baby-Proofing Your Home: A Checklist",
+    "summary": "As your baby becomes more mobile, it's important to baby-proof your home. This checklist covers all the areas of your home that need to be secured to keep your baby safe.",
+    "source": "https://www.safekids.org/tip/babyproofing-your-home-checklist",
+    "image": "/src/assets/images/baby.png"
+  },
+  {
+    "id": "r4",
+    "category": "Postpartum Recovery",
+    "title": "Postpartum Nutrition: Eating for Healing and Energy",
+    "summary": "Your body needs time to heal after childbirth. This article provides tips for eating a healthy diet to support your recovery and boost your energy levels.",
+    "source": "https://www.medicalnewstoday.com/articles/postpartum-diet",
+    "image": "/src/assets/images/nutrition.jpg"
+  },
+  {
+    "id": "r5",
+    "category": "Postpartum Recovery",
+    "title": "Postpartum Exercise: When and How to Start",
+    "summary": "A guide to resuming exercise after childbirth. Learn when it's safe to start exercising and which exercises are best for postpartum recovery.",
+    "source": "https://www.acog.org/womens-health/faqs/exercise-after-pregnancy",
+    "image": "/src/assets/images/pregnancyexercise.png"
+  },
+  {
+    "id": "r6",
+    "category": "Postpartum Recovery",
+    "title": "Coping with Sleep Deprivation",
+    "summary": "Sleep deprivation is a common challenge for new parents. This article provides tips for coping with sleep deprivation, including napping, sharing nighttime duties, and creating a relaxing bedtime routine.",
+    "source": "https://www.sleepfoundation.org/sleep-deprivation",
+    "image": "/src/assets/images/sleepingpositions.png"
+  },
+  {
+    "id": "r7",
+    "category": "Postpartum Recovery",
+    "title": "Changes in Your Menstrual Cycle After Pregnancy",
+    "summary": "Your menstrual cycle may be different after pregnancy. This article explains what to expect and when your period is likely to return.",
+    "source": "https://my.clevelandclinic.org/health/articles/21717-postpartum-periods",
+    "image": "/src/assets/images/checkup.png"
+  },
+  {
+    "id": "r8",
+    "category": "Postpartum Recovery",
+    "title": "Sex and Intimacy After Birth",
+    "summary": "Resuming sexual activity after childbirth can be a sensitive topic. This article provides information on when it's safe to have sex again and how to navigate changes in intimacy.",
+    "source": "https://www.nhs.uk/pregnancy/labour-and-birth/what-happens/sex-after-birth/",
+    "image": "/src/assets/images/happypregnantwoman.png"
+  },
+  {
+    "id": "m1",
+    "category": "Miscellaneous",
+    "title": "Traveling with a Baby: Tips for a Smooth Trip",
+    "summary": "Traveling with a baby can be daunting, but with a little planning, it can be a positive experience. This guide provides tips for flying with a baby, packing essentials, and adjusting to a new time zone.",
+    "source": "https://www.whattoexpect.com/first-year/traveling-with-baby",
+    "image": "/src/assets/images/baby.png"
+  },
+  {
+    "id": "m2",
+    "category": "Miscellaneous",
+    "title": "Choosing Childcare: A Guide for Parents",
+    "summary": "Choosing the right childcare is a big decision. This guide explains the different types of childcare, what to look for in a provider, and questions to ask during your search.",
+    "source": "https://www.childcare.gov/consumer-education/choosing-quality-child-care",
+    "image": "/src/assets/images/baby.png"
+  },
+  {
+    "id": "m3",
+    "category": "Miscellaneous",
+    "title": "The Fourth Trimester: A Guide for New Parents",
+    "summary": "The first three months after birth are often referred to as the fourth trimester. This guide explains what to expect during this time and how to care for yourself and your new baby.",
+    "source": "https://www.parents.com/baby/new-parent/fourth-trimester/",
+    "image": "/src/assets/images/baby.png"
+  },
+  {
+    "id": "m4",
+    "category": "Miscellaneous",
+    "title": "Common Baby Rashes and Skin Conditions",
+    "summary": "A guide to common baby rashes and skin conditions, including diaper rash, eczema, and cradle cap. Learn how to identify and treat these conditions.",
+    "source": "https://www.healthychildren.org/English/ages-stages/baby/bathing-skin-care/Pages/Common-Baby-Rashes-and-Skin-Conditions.aspx",
+    "image": "/src/assets/images/baby.png"
+  },
+  {
+    "id": "m5",
+    "category": "Miscellaneous",
+    "title": "Financial Planning for a New Baby",
+    "summary": "Having a baby is a major life event that can have a significant impact on your finances. This guide provides tips for creating a budget, saving for college, and updating your insurance and estate plans.",
+    "source": "https://www.forbes.com/advisor/personal-finance/financial-planning-for-new-baby/",
+    "image": "/src/assets/images/baby.png"
+  }
+]
