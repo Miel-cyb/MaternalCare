@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import beforePregnancyVideo from '../assets/beforepregnancy.mp4';
 import afterPregnancyVideo from '../assets/images/afterpregnancy.mp4';
 import happyWoman from '../assets/images/happypregnantwoman.png';
@@ -8,7 +8,8 @@ const weeks = Array.from({ length: 40 }, (_, i) => i + 1);
 
 const Hero = () => {
     const [selectedWeek, setSelectedWeek] = useState(32);
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 1024); // Changed to 1024 for lg breakpoint
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
+    const [showVideoModal, setShowVideoModal] = useState(false);
 
     const videoRef = useRef<HTMLVideoElement>(null);
     const videos = [beforePregnancyVideo, afterPregnancyVideo];
@@ -23,11 +24,11 @@ const Hero = () => {
             videoRef.current.src = videos[currentVideoIndex];
             videoRef.current.play();
         }
-    }, [currentVideoIndex, videos]);
+    }, [currentVideoIndex]);
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth < 1024); // Changed to 1024 for lg breakpoint
+            setIsMobile(window.innerWidth < 1024);
         };
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
@@ -56,9 +57,12 @@ const Hero = () => {
             <h3 className="font-bold text-gray-800 text-xl">Doc's Tips</h3>
             <p className="text-sm text-gray-600 mb-4">for 3rd Trimester</p>
             <div className="relative rounded-xl overflow-hidden">
-                <img src={happyWoman} alt="Pregnancy Gymnastics" />
+                <img src={happyWoman} alt="Pregnancy Gymnastics" loading="lazy" />
                 <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
-                    <button className="w-12 h-12 bg-white/80 rounded-full flex items-center justify-center backdrop-blur-sm transition-transform hover:scale-110">
+                    <button 
+                        className="w-12 h-12 bg-white/80 rounded-full flex items-center justify-center backdrop-blur-sm transition-transform hover:scale-110"
+                        onClick={() => setShowVideoModal(true)}
+                    >
                         <svg className="w-7 h-7 text-gray-800" fill="currentColor" viewBox="0 0 20 20"><path d="M8 5v10l7-5-7-5z"></path></svg>
                     </button>
                 </div>
@@ -108,9 +112,8 @@ const Hero = () => {
                     muted
                     playsInline
                     autoPlay
-                    className={`w-full h-full object-cover ${currentVideoIndex === 1 ? 'object-top' : ''}`}
-                >
-                  <source src={videos[0]} type="video/mp4" />
+                    preload="metadata"
+                    className={`w-full h-full object-cover ${currentVideoIndex === 1 ? 'object-top' : ''}`}>
                 </video>
             </div>
         </div>
@@ -150,6 +153,36 @@ const Hero = () => {
         </motion.div>
 
       </div>
+
+      {/* Video Modal */}
+      <AnimatePresence>
+        {showVideoModal && (
+            <motion.div 
+                className="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                onClick={() => setShowVideoModal(false)}
+            >
+                <motion.div 
+                    className="bg-white rounded-2xl w-full max-w-3xl aspect-video m-4"
+                    initial={{ scale: 0.8 }}
+                    animate={{ scale: 1 }}
+                    exit={{ scale: 0.8 }}
+                    onClick={(e) => e.stopPropagation()} // Prevent closing modal when clicking on the video
+                >
+                     <iframe
+                     src="https://www.youtube.com/embed/pxACsE_bH-Y?si=hHgKybJrp8X44DK3" 
+                      title="Pregnancy Gymnastics"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="w-full h-full rounded-2xl"
+                    />
+                </motion.div>
+            </motion.div>
+        )}
+      </AnimatePresence>
+
     </header>
   );
 };

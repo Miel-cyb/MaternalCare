@@ -23,6 +23,7 @@ const ResourceCard = ({ resource }: { resource: Resource }) => {
         className="w-full h-40 object-cover"
         src={resource.image}
         alt={resource.title}
+        loading="lazy"
       />
       <div className="p-5">
         <p className="text-sm font-semibold text-pink-500">{resource.category}</p>

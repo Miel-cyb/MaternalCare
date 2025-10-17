@@ -63,25 +63,22 @@ const meals = [
 export default function Meals() {
   const [index, setIndex] = useState(0);
 
-  // switch foods
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % meals.length)
-    }, 2000);
+    }, 4500);
 
     return () => clearInterval(interval)
   }, [])
 
   return (
     <div className="relative bg-gradient-to-br from-pink-50 via-red-50 to-rose-50 pb-20 overflow-hidden">
-      {/* Decorative Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-10 left-10 w-32 h-32 bg-pink-100/30 rounded-full blur-xl"></div>
         <div className="absolute top-32 right-20 w-24 h-24 bg-red-100/40 rounded-full blur-lg"></div>
         <div className="absolute bottom-20 left-1/4 w-40 h-40 bg-rose-100/20 rounded-full blur-2xl"></div>
       </div>
 
-      {/* SVG Curve */}
       <div className="absolute top-0 left-0 w-full overflow-hidden leading-none">
         <svg
           className="relative block w-full h-24"
@@ -97,7 +94,6 @@ export default function Meals() {
       </div>
 
       <div className="mx-auto flex flex-col lg:flex-row justify-between items-center max-w-7xl mt-32 px-6 lg:px-8 relative z-10 gap-12">
-        {/* Content Section */}
         <div className="text-center lg:text-left lg:max-w-2xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -131,7 +127,6 @@ export default function Meals() {
             balanced meals, key nutrients, and safe food choices.
           </motion.p>
 
-          {/* Progress Indicators */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -150,7 +145,6 @@ export default function Meals() {
             ))}
           </motion.div>
 
-          {/* Features List */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -168,9 +162,7 @@ export default function Meals() {
           </motion.div>
         </div>
 
-        {/* Image Section */}
         <div className="relative">
-          {/* Decorative Background Circle */}
           <div className="absolute inset-0 bg-gradient-to-br from-red-200/30 to-rose-200/30 rounded-full transform scale-110 blur-xl"></div>
           
           <motion.div 
@@ -179,17 +171,16 @@ export default function Meals() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative bg-white/40 backdrop-blur-lg rounded-3xl p-8 shadow-2xl border border-white/30 max-w-sm mx-auto"
           >
-            <div className="relative">
+            <div className="relative overflow-hidden">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={meals[index].id}
-                  initial={{ opacity: 0, rotate: -10, x: -50, scale: 0.9 }}
-                  animate={{ opacity: 1, rotate: 0, x: 0, scale: 1 }}
-                  exit={{ opacity: 0, rotate: 10, x: 50, scale: 0.9 }}
+                  initial={{ opacity: 0, y: 20, scale: 0.95 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  exit={{ opacity: 0, y: -20, scale: 0.95 }}
                   transition={{ 
-                    duration: 0.6,
-                    type: "spring",
-                    stiffness: 100
+                    duration: 0.8,
+                    ease: "easeInOut"
                   }}
                 >
                   <img
@@ -209,7 +200,6 @@ export default function Meals() {
               </AnimatePresence>
             </div>
 
-            {/* Floating Nutrition Badge */}
             <motion.div 
               className="absolute -top-4 -right-4 bg-pink-500 text-white px-3 py-2 rounded-full text-xs font-semibold shadow-lg"
               animate={{ y: [0, -5, 0] }}
@@ -219,7 +209,6 @@ export default function Meals() {
             </motion.div>
           </motion.div>
 
-          {/* Floating Elements */}
           <motion.div 
             className="absolute -top-6 -left-6 w-12 h-12 bg-red-400/20 rounded-full flex items-center justify-center"
             animate={{ 
