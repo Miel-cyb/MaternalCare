@@ -7,10 +7,7 @@ import { GiSunflower } from "react-icons/gi";
 import { MdFavorite } from "react-icons/md";
 import { motion, type Variants } from "framer-motion";
 import Logo from '../components/Logo';
-import { LuRefreshCcw } from "react-icons/lu";
 import WeeklyInfo from "../components/WeeklyInfo";
-import pregnancyData from '../data/pregnancyData.json'
-import { useState } from 'react';
 import HealthTracker from '../components/HealthTracker';
 
 
@@ -62,14 +59,7 @@ const TrackPregnancy = () => {
     };
 
 
-    const [weeks, setWeeks] = useState<number | null>(null)
-    const [weeklyData, setWeeklyData] = useState<any | null>(null); 
-
-    const fetchWeeklyData = () => {
-        if (weeks === null) return;
-        const data = pregnancyData.find((d) => d.week === weeks);
-        setWeeklyData(data || null); 
-    };
+  
 
     
 
@@ -234,7 +224,7 @@ const TrackPregnancy = () => {
                             variants={cardVariants}
                             initial="hidden"
                             whileInView="visible"
-                            className="absolute left-1/2 -translate-x-1/2 top-1/2  z-40 w-64 lg:hidden w-full  "
+                            className="absolute left-1/2 -translate-x-1/2 top-1/2  z-40  lg:hidden w-full  "
                         >
                             <div
                             className="relative p-6 text-sm shadow-xl border border-white/20 backdrop-blur-sm"
