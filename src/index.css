@@ -3,7 +3,9 @@
 @import "tailwindcss";
 
 * {
-  font-family: '"Playwrite HU"', cursive;
+  font-family: "Delius Swash Caps", cursive;
+  font-weight: 400;
+  font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -53,3 +55,10 @@ button{
 .animate-slow-rotate {
   animation: slow-rotate 60s linear infinite;
 }
+
+@media screen and (max-width: 640px) {
+  html {
+    font-size: 17px;
+  }
+}
+

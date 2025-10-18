@@ -13,7 +13,8 @@ module.exports = {
         'bounce-slow': 'bounce 3s infinite', 
       },
       fontFamily: {
-        'sans': ['"Playwrite HU"', 'cursive'],
+        'sans': [ "Delius Swash Caps", 'cursive'],
+        
       },
       colors: {
           'primary': '#F0F9FF',   // sky-50

@@ -49,10 +49,10 @@ const LandingPage = () => {
 
         {/* Text Content */}
         <div className="relative z-10 text-center max-w-3xl px-6">
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight drop-shadow-md">
+          <h1 className="font-quicksand text-3xl sm:text-5xl md:text-6xl font-semibold sm:font-extrabold text-white leading-tight drop-shadow-md">
             Empowering Mothers, Nurturing Futures
           </h1>
-          <p className="mt-4 text-lg md:text-xl text-pink-100 font-medium">
+          <p className="mt-4 font-quicksand text-lg md:text-xl text-pink-100 font-semibold sm:font-medium">
             Evidence-based maternal care for a healthier Ghana.
           </p>
 
