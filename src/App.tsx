@@ -1,17 +1,16 @@
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Suspense, lazy } from "react";
+import { Suspense } from "react";
+import LandingPage from "./pages/LandingPage";
+import Home from "./pages/Home";
+import TrackPregnancy from "./pages/TrackPregnancy";
+import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
+import Settings from "./pages/Settings";
+import NutritionalGuide from "./pages/NutritionalGuide";
+import Resources from "./pages/Resources";
 
-const Home = lazy(() => import("./pages/Home"));
-const TrackPregnancy = lazy(() => import("./pages/TrackPregnancy"));
-const LandingPage = lazy(() => import("./pages/LandingPage"));
-const Login = lazy(() => import("./pages/Login"));
-const SignUp = lazy(() => import("./pages/SignUp"));
-const Settings = lazy(() => import("./pages/Settings"));
-const NutritionalGuide = lazy(() => import("./pages/NutritionalGuide")); 
-const Resources = lazy(() => import("./pages/Resources"));
-
-function App() {
+function App(){
   return (
     <>
       <Router>

@@ -57,7 +57,7 @@ const Hero = () => {
             <h3 className="font-bold text-gray-800 text-xl">Doc's Tips</h3>
             <p className="text-sm text-gray-600 mb-4">for 3rd Trimester</p>
             <div className="relative rounded-xl overflow-hidden">
-                <img src={happyWoman} alt="Pregnancy Gymnastics" loading="lazy" />
+                <img src={happyWoman} alt="Pregnancy Gymnastics"  />
                 <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
                     <button 
                         className="w-12 h-12 bg-white/80 rounded-full flex items-center justify-center backdrop-blur-sm transition-transform hover:scale-110"
