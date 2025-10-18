@@ -44,7 +44,7 @@ const LandingPage = () => {
           </video>
 
           {/* Soft overlay */}
-          <div className="absolute inset-0 bg-black/40"></div>
+          <div className="absolute inset-0 bg-black/20"></div>
         </div>
 
         {/* Text Content */}
