@@ -3,10 +3,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 import beforePregnancyVideo from '../assets/beforepregnancy.mp4';
 import afterPregnancyVideo from '../assets/images/afterpregnancy.mp4';
 import happyWoman from '../assets/images/happypregnantwoman.png';
+import { useTranslation } from 'react-i18next';
 
 const weeks = Array.from({ length: 40 }, (_, i) => i + 1);
 
 const Hero = () => {
+    const { t } = useTranslation();
     const [selectedWeek, setSelectedWeek] = useState(32);
     const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
     const [showVideoModal, setShowVideoModal] = useState(false);
@@ -41,7 +43,7 @@ const Hero = () => {
     <header className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-rose-50 px-4 sm:px-6 lg:px-8">
          <div className="absolute top-16 sm:top-24 text-center z-20">
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-800 tracking-tight">
-                  Pregnancy Progress
+                  {t('Pregnancy Progress')}
               </h1>
           </div>
 
@@ -54,10 +56,10 @@ const Hero = () => {
             animate={{ opacity: 1, x: 0, y: 0 }}
             transition={{ delay: 0.2, duration: 0.5 }}
         >
-            <h3 className="font-bold text-gray-800 text-xl">Doc's Tips</h3>
-            <p className="text-sm text-gray-600 mb-4">for 3rd Trimester</p>
+            <h3 className="font-bold text-gray-800 text-xl">{t("Doc's Tips")}</h3>
+            <p className="text-sm text-gray-600 mb-4">{t("for 3rd Trimester")}</p>
             <div className="relative rounded-xl overflow-hidden">
-                <img src={happyWoman} alt="Pregnancy Gymnastics"  />
+                <img src={happyWoman} alt={t('Pregnancy Gymnastics')}  />
                 <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
                     <button 
                         className="w-12 h-12 bg-white/80 rounded-full flex items-center justify-center backdrop-blur-sm transition-transform hover:scale-110"
@@ -67,8 +69,8 @@ const Hero = () => {
                     </button>
                 </div>
             </div>
-            <p className="font-semibold text-gray-700 mt-3 text-base">Video</p>
-            <p className="font-bold text-gray-800 text-lg">Pregnancy Gymnastics</p>
+            <p className="font-semibold text-gray-700 mt-3 text-base">{t('Video')}</p>
+            <p className="font-bold text-gray-800 text-lg">{t('Pregnancy Gymnastics')}</p>
         </motion.div>
 
 
@@ -125,8 +127,8 @@ const Hero = () => {
             animate={{ opacity: 1, x: 0, y: 0 }}
             transition={{ delay: 0.4, duration: 0.5 }}
         >
-            <h3 className="font-bold text-gray-800 text-xl">Analysis</h3>
-            <p className="text-sm text-gray-600 mb-4">for Week {selectedWeek}</p>
+            <h3 className="font-bold text-gray-800 text-xl">{t('Analysis')}</h3>
+            <p className="text-sm text-gray-600 mb-4">{t('for Week')} {selectedWeek}</p>
             <div className="bg-white/80 p-3 rounded-xl">
                 <svg className="w-full" height="60" viewBox="0 0 200 60">
                     <motion.path 
@@ -148,7 +150,7 @@ const Hero = () => {
                         transition={{ duration: 1.2, delay: 0.7 }}
                     />
                 </svg>
-                <p className="text-xs text-gray-500 mt-2 text-center">Echocardiography</p>
+                <p className="text-xs text-gray-500 mt-2 text-center">{t('Echocardiography')}</p>
             </div>
         </motion.div>
 
@@ -173,7 +175,7 @@ const Hero = () => {
                 >
                      <iframe
                      src="https://www.youtube.com/embed/pxACsE_bH-Y?si=hHgKybJrp8X44DK3" 
-                      title="Pregnancy Gymnastics"
+                      title={t('Pregnancy Gymnastics')}
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
                       className="w-full h-full rounded-2xl"

@@ -9,16 +9,19 @@ import SignUp from "./pages/SignUp";
 import Settings from "./pages/Settings";
 import NutritionalGuide from "./pages/NutritionalGuide";
 import Resources from "./pages/Resources";
+import ScrollToTop from "./components/ScrollToTop";
+import BackToTopButton from "./components/BackToTopButton";
 
 function App(){
   return (
     <>
       <Router>
+        <ScrollToTop />
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/home" element={<Home />} />
-            <Route path="/pregnancy-tracker" element={<TrackPregnancy />} />
+            <Route path="/pregnancy-tracker" element={<TrackPregnancy/>} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<SignUp />} />
             <Route path="/settings" element={<Settings />} />
@@ -26,6 +29,7 @@ function App(){
             <Route path="/resources" element={<Resources/>}/>
           </Routes>
         </Suspense>
+        <BackToTopButton />
       </Router>
     </>
   );

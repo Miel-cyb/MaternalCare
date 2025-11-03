@@ -1,4 +1,5 @@
 import { useState, type JSX } from "react";
+import { useTranslation } from "react-i18next";
 
 const faqData = [
     {
@@ -24,12 +25,13 @@ const faqData = [
 ];
 
 export default function Faq(): JSX.Element {
+    const { t } = useTranslation();
     const [openFaq, setOpenFaq] = useState<number | null>(null);
 
     return (
         <section className="py-12 bg-white">
             <div className="max-w-4xl mx-auto px-6 md:px-12">
-                <h2 className="text-2xl md:text-3xl font-semibold text-rose-800 mb-6">Frequently Asked Questions</h2>
+                <h2 className="text-2xl md:text-3xl font-semibold text-rose-800 mb-6">{t('Frequently Asked Questions')}</h2>
                 <div className="space-y-4">
                     {faqData.map((faq, index) => (
                         <div key={index} className="p-4 border border-rose-100 rounded-lg">
@@ -37,7 +39,7 @@ export default function Faq(): JSX.Element {
                                 className="w-full flex justify-between items-center text-left"
                                 onClick={() => setOpenFaq(openFaq === index ? null : index)}
                             >
-                                <h3 className="font-semibold text-rose-700">{faq.question}</h3>
+                                <h3 className="font-semibold text-rose-700">{t(faq.question)}</h3>
                                 <span>
                                     {openFaq === index ? (
                                         <i className="fas fa-minus text-rose-600"></i>
@@ -48,8 +50,8 @@ export default function Faq(): JSX.Element {
                             </button>
                             {openFaq === index && (
                                 <div className="mt-4">
-                                    <p className="text-slate-700">{faq.answer}</p>
-                                    <p className="mt-2 text-xs text-slate-500">Source: {faq.source}</p>
+                                    <p className="text-slate-700">{t(faq.answer)}</p>
+                                    <p className="mt-2 text-xs text-slate-500">{t('Source')}: {faq.source}</p>
                                 </div>
                             )}
                         </div>
