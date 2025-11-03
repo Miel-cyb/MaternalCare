@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import mythList from '../data/pregnancyMyth.json';
 import { LuLightbulb, LuBadgeCheck } from 'react-icons/lu';
+import { LuRefreshCcw } from 'react-icons/lu';
 
 type Myth = {
   id: number;
@@ -27,6 +28,7 @@ const MythCard = ({ myth }: { myth: Myth }) => {
       style={{ perspective: '1000px' }}
     >
       {/* Front Side (Myth) */}
+    
       <motion.div
         className="absolute w-full h-full bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center justify-center text-center border-2 border-rose-200"
         animate={{ rotateY: isFlipped ? 180 : 0 }}
@@ -36,7 +38,7 @@ const MythCard = ({ myth }: { myth: Myth }) => {
         <LuLightbulb className="text-rose-500 text-4xl mb-3" />
         <h3 className="font-bold text-lg text-rose-800">{t('Myth')}</h3>
         <p className="mt-2 text-gray-600">{t(myth.myth)}</p>
-        <p className="text-xs mt-4 text-gray-500 font-medium md:hidden">{t('Click to Read')}</p>
+        <p className="text-xs mt-4 text-gray-500 font-medium ">{t('Click to rotate')}</p>
       </motion.div>
 
       {/* Back Side (Fact) */}
