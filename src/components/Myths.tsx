@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import mythList from '../data/pregnancyMyth.json';
 import { LuLightbulb, LuBadgeCheck } from 'react-icons/lu';
-import { LuRefreshCcw } from 'react-icons/lu';
+
 
 type Myth = {
   id: number;
