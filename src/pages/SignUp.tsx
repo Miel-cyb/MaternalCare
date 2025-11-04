@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { createUserWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
-import { auth, googleProvider } from '../firebase';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../firebase';
 import { useTranslation } from 'react-i18next';
 
 const SignUp = () => {
@@ -23,18 +23,6 @@ const SignUp = () => {
         }
         try {
             await createUserWithEmailAndPassword(auth, email, password);
-            setSuccess(t('Sign up successful! Redirecting to homepage...'));
-            setTimeout(() => {
-                navigate('/');
-            }, 2000);
-        } catch (error: any) {
-            setError(error.message);
-        }
-    };
-
-    const handleGoogleSignUp = async () => {
-        try {
-            await signInWithPopup(auth, googleProvider);
             setSuccess(t('Sign up successful! Redirecting to homepage...'));
             setTimeout(() => {
                 navigate('/');
