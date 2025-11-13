@@ -76,31 +76,6 @@ const LandingPage = () => {
           </div>
         </div>
       </header>
-      <footer className="bg-rose-800 text-white py-8 px-6 md:px-12">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
-            <h3 className="text-lg font-semibold">About PreggsCare</h3>
-            <p className="mt-2 text-sm">PreggsCare is a comprehensive resource for expectant mothers, providing guidance and support throughout the pregnancy journey.</p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold">Quick Links</h3>
-            <ul className="mt-2 space-y-2">
-              <li><Link to="/" className="hover:underline">Home</Link></li>
-              <li><Link to="/pregnancy-tracker" className="hover:underline">Pregnancy Tracker</Link></li>
-              <li><Link to="/nutritional-guide" className="hover:underline">Nutritional Guide</Link></li>
-              <li><Link to="/resources" className="hover:underline">Resources</Link></li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold">Contact Us</h3>
-            <p className="mt-2 text-sm">Email: support@preggscare.com</p>
-            <p className="text-sm">Phone: +1 (555) 123-4567</p>
-          </div>
-        </div>
-        <div className="mt-8 border-t border-rose-700 pt-4 text-center text-sm">
-          <p>&copy; 2024 PreggsCare. All rights reserved.</p>
-        </div>
-      </footer>
     </>
   );
 };
